@@ -6,9 +6,9 @@
           http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:property-placeholder location="classpath:spider.properties"/>
+    <context:property-placeholder location="classpath:elevator.properties"/>
 
-    <context:component-scan base-package="com.wuliangit">
+    <context:component-scan base-package="com.wuliangit.elevator">
     </context:component-scan>
 
     <!-- 配置数据源-->
@@ -22,7 +22,7 @@
     <!-- MyBatis begin -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
-        <property name="typeAliasesPackage" value="com.wuliangit.shopos.entity"/>
+        <property name="typeAliasesPackage" value="com.wuliangit.elevator.entity"/>
         <property name="mapperLocations" value="classpath:/mappings/**/*.xml"/>
         <property name="configLocation" value="classpath:/mybatis-config.xml"></property>
     </bean>
@@ -30,9 +30,9 @@
     <!-- 扫描basePackage下所有以MyBatis的接口 -->
     <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
-        <property name="basePackage" value="com.wuliangit.dao"/>
+        <property name="basePackage" value="com.wuliangit.elevator.dao"/>
     </bean>
 
-    <bean class="com.wuliangit.util.SpringUtils"/>
+    <bean class="com.wuliangit.elevator.util.SpringUtils"/>
 
 </beans>

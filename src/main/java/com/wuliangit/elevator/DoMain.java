@@ -3,6 +3,7 @@ package com.wuliangit.elevator;
 import com.wuliangit.elevator.dao.BidMapper;
 import com.wuliangit.elevator.spider.chinabidding.ChinabiddingProcessor1;
 import com.wuliangit.elevator.spider.hzctc.HzctcBefore1Processor;
+import com.wuliangit.elevator.spider.hzft.HzftBefore1Processor;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import us.codecraft.webmagic.Spider;
 
@@ -35,7 +36,8 @@ public class DoMain {
 
 
         //中国国际招标网
-        Spider.create(new ChinabiddingProcessor1()).addRequest(ChinabiddingProcessor1.getRequest()).thread(1).run();
+//        Spider.create(new ChinabiddingProcessor1()).addRequest(ChinabiddingProcessor1.getRequest()).thread(1).run();
+        Spider.create(new HzftBefore1Processor()).addRequest(HzftBefore1Processor.getRequest()).thread(1).run();
 
     }
 
