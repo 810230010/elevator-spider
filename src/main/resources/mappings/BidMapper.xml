@@ -25,11 +25,13 @@
     <include refid="Base_Column_List" />
     ,
     <include refid="Blob_Column_List" />
-    from bid
+    from t_bid
     where bid_id = #{bidId,jdbcType=INTEGER}
   </select>
-
-
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_bid
+    where bid_id = #{bidId,jdbcType=INTEGER}
+  </delete>
 
 
 
@@ -46,15 +48,11 @@
 
 
 
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
-    delete from bid
-    where bid_id = #{bidId,jdbcType=INTEGER}
-  </delete>
   <insert id="insert" parameterType="com.wuliangit.elevator.entity.Bid" >
     <selectKey resultType="java.lang.Integer" keyProperty="bidId" order="AFTER" >
       SELECT LAST_INSERT_ID()
     </selectKey>
-    insert into bid (sid, type, title, 
+    insert into t_bid (sid, type, title, 
       public_time, begin_time, end_time, 
       url, content)
     values (#{sid,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR}, #{title,jdbcType=VARCHAR}, 
@@ -65,7 +63,7 @@
     <selectKey resultType="java.lang.Integer" keyProperty="bidId" order="AFTER" >
       SELECT LAST_INSERT_ID()
     </selectKey>
-    insert into bid
+    insert into t_bid
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="sid != null" >
         sid,
@@ -120,7 +118,7 @@
     </trim>
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.wuliangit.elevator.entity.Bid" >
-    update bid
+    update t_bid
     <set >
       <if test="sid != null" >
         sid = #{sid,jdbcType=VARCHAR},
@@ -150,7 +148,7 @@
     where bid_id = #{bidId,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.wuliangit.elevator.entity.Bid" >
-    update bid
+    update t_bid
     set sid = #{sid,jdbcType=VARCHAR},
       type = #{type,jdbcType=VARCHAR},
       title = #{title,jdbcType=VARCHAR},
@@ -162,7 +160,7 @@
     where bid_id = #{bidId,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.wuliangit.elevator.entity.Bid" >
-    update bid
+    update t_bid
     set sid = #{sid,jdbcType=VARCHAR},
       type = #{type,jdbcType=VARCHAR},
       title = #{title,jdbcType=VARCHAR},

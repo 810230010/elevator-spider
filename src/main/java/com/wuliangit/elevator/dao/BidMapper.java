@@ -16,8 +16,4 @@ public interface BidMapper {
     int updateByPrimaryKeyWithBLOBs(Bid record);
 
     int updateByPrimaryKey(Bid record);
-
-    String isExistBySid(String sid);
-
-    String isExistByTitle(String title);
 }

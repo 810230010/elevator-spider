@@ -24,7 +24,7 @@
         </commentGenerator>
 
         <!--数据库链接URL，用户名、密码 -->
-        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://rm-uf6y7ofoac1ao1d7xo.mysql.rds.aliyuncs.com:3306/spider" userId="root" password="Kr^##lg*bX8Vt4">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://rm-uf6y7ofoac1ao1d7xo.mysql.rds.aliyuncs.com:3306/elevator" userId="elevator" password="HdC4pXPVP9dOT">
         </jdbcConnection>
 
         <javaTypeResolver>
@@ -51,7 +51,7 @@
 
 
         <!-- 要生成哪些表-->
-        <table tableName="bid" domainObjectName="Bid" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+        <table tableName="t_bid" domainObjectName="Bid" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
             <generatedKey column="bid_id" sqlStatement="MySql" identity="true"/>
         </table>
 
