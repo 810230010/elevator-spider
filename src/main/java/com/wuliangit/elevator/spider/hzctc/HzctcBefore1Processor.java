@@ -1,6 +1,5 @@
 package com.wuliangit.elevator.spider.hzctc;
 
-import com.wuliangit.elevator.dao.BidMapper;
 import com.wuliangit.elevator.entity.Bid;
 import com.wuliangit.elevator.service.BidService;
 import com.wuliangit.elevator.util.SpringUtils;

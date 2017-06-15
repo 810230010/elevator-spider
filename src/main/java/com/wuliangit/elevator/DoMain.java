@@ -2,6 +2,7 @@ package com.wuliangit.elevator;
 
 import com.wuliangit.elevator.dao.BidMapper;
 import com.wuliangit.elevator.spider.chinabidding.ChinabiddingProcessor1;
+import com.wuliangit.elevator.spider.hzctc.HzctcBefore1Processor;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import us.codecraft.webmagic.Spider;
 
