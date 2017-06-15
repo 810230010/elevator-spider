@@ -2,6 +2,10 @@ package com.wuliangit.elevator.spider.hzft;
 
 import com.wuliangit.elevator.service.BidService;
 import com.wuliangit.elevator.util.SpringUtils;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Request;
 import us.codecraft.webmagic.Site;
@@ -58,16 +62,13 @@ public class HzftBefore1Processor implements PageProcessor{
             Request request = new Request("http://cg.hzft.gov.cn/www/noticelist.do");
             //只有POST请求才可以添加附加参数
             request.setMethod(HttpConstant.Method.POST);
-
             Map<String, Object> hashMap = new HashMap<String, Object>();
-            Map<String, Object> parameters = new HashMap<String, Object>();
             hashMap.put("page.pageNum", i);
             hashMap.put("parameters['title']", "电梯");
             hashMap.put("parameters['noticetype']",3);
-
+            System.out.println(hashMap);
             try {
                 request.setRequestBody(HttpRequestBody.form(hashMap, "UTF-8"));
-
             } catch (UnsupportedEncodingException e) {
                 e.printStackTrace();
             }
@@ -93,7 +94,7 @@ public class HzftBefore1Processor implements PageProcessor{
             // 获取URLConnection对象对应的输出流
             out = new PrintWriter(conn.getOutputStream());
             // 发送请求参数
-            String param = "page.pageNum=1&parameters['noticetype']=3&parameters['title']=电梯".getBytes("utf-8").toString();
+            String param = "page.pageNum=1&parameters['noticetype']=3&parameters['title']=电梯".toString();
             out.print(param);
             // flush输出流的缓冲
             out.flush();
@@ -102,11 +103,14 @@ public class HzftBefore1Processor implements PageProcessor{
             while((html = br.readLine()) != null){
                 result.append(html).append("\r\n");
             }
-            System.out.println(result.toString());
+            Document doc = Jsoup.parse(result.toString());
+            String target = doc.select("span.num").first().ownText();
+            totalPage = Integer.parseInt(target.substring(2, target.lastIndexOf("页")));
         } catch (Exception e) {
             e.printStackTrace();
         }
         
         return totalPage;
     }
+
 }
