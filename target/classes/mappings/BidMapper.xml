@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wuliangit.dao.BidMapper" >
+  <resultMap id="BaseResultMap" type="com.wuliangit.entity.Bid" >
+    <id column="bid_id" property="bidId" jdbcType="INTEGER" />
+    <result column="sid" property="sid" jdbcType="VARCHAR" />
+    <result column="type" property="type" jdbcType="VARCHAR" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="public_time" property="publicTime" jdbcType="VARCHAR" />
+    <result column="begin_time" property="beginTime" jdbcType="VARCHAR" />
+    <result column="end_time" property="endTime" jdbcType="VARCHAR" />
+    <result column="url" property="url" jdbcType="VARCHAR" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.wuliangit.entity.Bid" extends="BaseResultMap" >
+    <result column="content" property="content" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    bid_id, sid, type, title, public_time, begin_time, end_time, url
+  </sql>
+  <sql id="Blob_Column_List" >
+    content
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from bid
+    where bid_id = #{bidId,jdbcType=INTEGER}
+  </select>
+
+
+
+
+
+  <select id="isExistBySid" resultType="String" parameterType="java.lang.String" >
+    select sid from bid where sid = #{sid}
+  </select>
+
+
+  <select id="isExistByTitle" resultType="String" parameterType="java.lang.String" >
+    select title from bid where title = #{title}
+  </select>
+
+
+
+
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from bid
+    where bid_id = #{bidId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.wuliangit.entity.Bid" >
+    <selectKey resultType="java.lang.Integer" keyProperty="bidId" order="AFTER" >
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into bid (sid, type, title, 
+      public_time, begin_time, end_time, 
+      url, content)
+    values (#{sid,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR}, #{title,jdbcType=VARCHAR}, 
+      #{publicTime,jdbcType=VARCHAR}, #{beginTime,jdbcType=VARCHAR}, #{endTime,jdbcType=VARCHAR}, 
+      #{url,jdbcType=VARCHAR}, #{content,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.wuliangit.entity.Bid" >
+    <selectKey resultType="java.lang.Integer" keyProperty="bidId" order="AFTER" >
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into bid
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="sid != null" >
+        sid,
+      </if>
+      <if test="type != null" >
+        type,
+      </if>
+      <if test="title != null" >
+        title,
+      </if>
+      <if test="publicTime != null" >
+        public_time,
+      </if>
+      <if test="beginTime != null" >
+        begin_time,
+      </if>
+      <if test="endTime != null" >
+        end_time,
+      </if>
+      <if test="url != null" >
+        url,
+      </if>
+      <if test="content != null" >
+        content,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="sid != null" >
+        #{sid,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null" >
+        #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="title != null" >
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="publicTime != null" >
+        #{publicTime,jdbcType=VARCHAR},
+      </if>
+      <if test="beginTime != null" >
+        #{beginTime,jdbcType=VARCHAR},
+      </if>
+      <if test="endTime != null" >
+        #{endTime,jdbcType=VARCHAR},
+      </if>
+      <if test="url != null" >
+        #{url,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null" >
+        #{content,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.wuliangit.entity.Bid" >
+    update bid
+    <set >
+      <if test="sid != null" >
+        sid = #{sid,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null" >
+        type = #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="title != null" >
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="publicTime != null" >
+        public_time = #{publicTime,jdbcType=VARCHAR},
+      </if>
+      <if test="beginTime != null" >
+        begin_time = #{beginTime,jdbcType=VARCHAR},
+      </if>
+      <if test="endTime != null" >
+        end_time = #{endTime,jdbcType=VARCHAR},
+      </if>
+      <if test="url != null" >
+        url = #{url,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null" >
+        content = #{content,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where bid_id = #{bidId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.wuliangit.entity.Bid" >
+    update bid
+    set sid = #{sid,jdbcType=VARCHAR},
+      type = #{type,jdbcType=VARCHAR},
+      title = #{title,jdbcType=VARCHAR},
+      public_time = #{publicTime,jdbcType=VARCHAR},
+      begin_time = #{beginTime,jdbcType=VARCHAR},
+      end_time = #{endTime,jdbcType=VARCHAR},
+      url = #{url,jdbcType=VARCHAR},
+      content = #{content,jdbcType=LONGVARCHAR}
+    where bid_id = #{bidId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.wuliangit.entity.Bid" >
+    update bid
+    set sid = #{sid,jdbcType=VARCHAR},
+      type = #{type,jdbcType=VARCHAR},
+      title = #{title,jdbcType=VARCHAR},
+      public_time = #{publicTime,jdbcType=VARCHAR},
+      begin_time = #{beginTime,jdbcType=VARCHAR},
+      end_time = #{endTime,jdbcType=VARCHAR},
+      url = #{url,jdbcType=VARCHAR}
+    where bid_id = #{bidId,jdbcType=INTEGER}
+  </update>
+</mapper>
