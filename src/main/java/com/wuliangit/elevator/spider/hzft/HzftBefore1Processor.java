@@ -4,6 +4,11 @@ import com.wuliangit.elevator.service.BidService;
 import com.wuliangit.elevator.util.SpringUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+<<<<<<< HEAD
+=======
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+>>>>>>> 0fb8ea41415cd14730d16fc0d847b6bc4337d1a4
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Request;
 import us.codecraft.webmagic.Site;
@@ -60,7 +65,6 @@ public class HzftBefore1Processor implements PageProcessor{
             Request request = new Request("http://cg.hzft.gov.cn/www/noticelist.do");
             //只有POST请求才可以添加附加参数
             request.setMethod(HttpConstant.Method.POST);
-
             Map<String, Object> hashMap = new HashMap<String, Object>();
             hashMap.put("page.pageNum", i);
             hashMap.put("parameters['title']", "电梯");
@@ -68,7 +72,6 @@ public class HzftBefore1Processor implements PageProcessor{
             System.out.println(hashMap);
             try {
                 request.setRequestBody(HttpRequestBody.form(hashMap, "UTF-8"));
-
             } catch (UnsupportedEncodingException e) {
                 e.printStackTrace();
             }
@@ -94,7 +97,11 @@ public class HzftBefore1Processor implements PageProcessor{
             // 获取URLConnection对象对应的输出流
             out = new PrintWriter(conn.getOutputStream());
             // 发送请求参数
+<<<<<<< HEAD
             String param = "page.pageNum=1&parameters['noticetype']=3&parameters['title']=电梯";
+=======
+            String param = "page.pageNum=1&parameters['noticetype']=3&parameters['title']=电梯".toString();
+>>>>>>> 0fb8ea41415cd14730d16fc0d847b6bc4337d1a4
             out.print(param);
             // flush输出流的缓冲
             out.flush();
@@ -112,4 +119,5 @@ public class HzftBefore1Processor implements PageProcessor{
         
         return totalPage;
     }
+
 }
