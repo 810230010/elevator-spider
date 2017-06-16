@@ -18,6 +18,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static com.wuliangit.elevator.spider.Common.BID_STATE_ZHAOBIAO;
+
 public class ZmctcProcessor1 implements PageProcessor {
 
     // 抓取网站的相关配置，包括：编码、抓取间隔、重试次数等
@@ -52,7 +54,7 @@ public class ZmctcProcessor1 implements PageProcessor {
                 bid.setUrl(page.getUrl().toString());
                 bid.setPublicTime(html.xpath("//*[@id=\"tdTitle\"]/font[2]/text()/text()").toString());
                 bid.setContent(html.xpath("/html/body/div/table[1]/tbody/tr/td[2]/table/tbody/tr[2]/td/table[2]/tbody/tr/td/table/tbody").toString());
-                bid.setType("ZHAOBIAO");
+                bid.setType(BID_STATE_ZHAOBIAO);
                 bid.setTitle(title);
                 bid.setSid(sid);
 

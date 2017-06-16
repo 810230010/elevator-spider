@@ -36,12 +36,12 @@
 
 
   <select id="isExistBySid" resultType="String" parameterType="java.lang.String" >
-    select sid from bid where sid = #{sid}
+    select sid from t_bid where sid = #{sid}
   </select>
 
 
   <select id="isExistByTitle" resultType="String" parameterType="java.lang.String" >
-    select title from bid where title = #{title}
+    select title from t_bid where title = #{title}
   </select>
 
 
