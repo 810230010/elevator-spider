@@ -3,6 +3,7 @@ package com.wuliangit.elevator;
 import com.sun.org.apache.bcel.internal.generic.NEW;
 import com.wuliangit.elevator.dao.BidMapper;
 import com.wuliangit.elevator.spider.chinabidding.ChinabiddingProcessor1;
+import com.wuliangit.elevator.spider.chinabidding.ChinabiddingProcessor2;
 import com.wuliangit.elevator.spider.hzctc.HzctcBefore1Processor;
 import com.wuliangit.elevator.spider.hzft.HzftBefore1Processor;
 import com.wuliangit.elevator.spider.newZmctc.NewZmctcBeforeProcessor1;
@@ -13,8 +14,7 @@ import us.codecraft.webmagic.Spider;
  * Created by nilme on 2017/6/13.
  */
 public class DoMain {
-
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         new ClassPathXmlApplicationContext("spring-context.xml");
         System.out.println("【爬虫开始】请耐心等待一大波数据到你碗里来...");
 
@@ -36,12 +36,18 @@ public class DoMain {
 //        Spider.create(new ZmctcProcessor1()).addRequest(ZmctcProcessor1.getRequest()).thread(5).run();
 
 
-        //中国国际招标网
+        //中国国际招标网（招标）
 //        Spider.create(new ChinabiddingProcessor1()).addRequest(ChinabiddingProcessor1.getRequest()).thread(1).run();
         //杭州市政府采购网
 //        Spider.create(new HzftBefore1Processor()).addRequest(HzftBefore1Processor.getRequest()).thread(1).run();
         //浙江省公共资源交易中心
-        Spider.create(new NewZmctcBeforeProcessor1()).addRequest(NewZmctcBeforeProcessor1.getRequest()).thread(1).run();
+//        Spider.create(new NewZmctcBeforeProcessor1()).addRequest(NewZmctcBeforeProcessor1.getRequest()).thread(1).run();
+        //中国国际招标网(中标)
+//        Spider.create(new ChinabiddingProcessor2()).addRequest(ChinabiddingProcessor2.getRequest()).thread(1).run();
+
+
+//        //杭州市政府采购网（招标）
+        Spider.create(new HzftBefore1Processor()).addRequest(HzftBefore1Processor.getRequest()).thread(1).run();
 
     }
 

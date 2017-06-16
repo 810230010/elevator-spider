@@ -10,6 +10,8 @@ import us.codecraft.webmagic.processor.PageProcessor;
 import us.codecraft.webmagic.selector.Html;
 import us.codecraft.webmagic.selector.Selectable;
 
+import static com.wuliangit.elevator.spider.Common.BID_STATE_ZHAOBIAO;
+
 public class HzctcBefore2Processor implements PageProcessor {
 
     // 抓取网站的相关配置，包括：编码、抓取间隔、重试次数等
@@ -44,7 +46,7 @@ public class HzctcBefore2Processor implements PageProcessor {
                 bid.setUrl(page.getUrl().toString());
                 bid.setPublicTime(html.xpath("//*[@id=\"ctl00_ContentPlaceHolder1_DB_PublishStartTime\"]/text()").toString());
                 bid.setContent(html.xpath("//*[@id=\"PageMain\"]/div[2]").toString());
-                bid.setType("ZHAOBIAO");
+                bid.setType(BID_STATE_ZHAOBIAO);
                 bid.setTitle(title);
                 bid.setSid(sid);
                 bid.setBeginTime(html.xpath("//*[@id=\"ctl00_ContentPlaceHolder1_DB_HtmlContent\"]/div/div[1]/table/tbody/tr[2]/td[2]/p/span/text()").toString());
