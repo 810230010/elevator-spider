@@ -7,6 +7,7 @@ import com.wuliangit.elevator.spider.chinabidding.ChinabiddingProcessor2;
 import com.wuliangit.elevator.spider.hzctc.HzctcBefore1Processor;
 import com.wuliangit.elevator.spider.hzft.HzftBefore1Processor;
 import com.wuliangit.elevator.spider.newZmctc.NewZmctcBeforeProcessor1;
+import com.wuliangit.elevator.spider.newZmctc.NewZmctcBeforeProcessor2;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import us.codecraft.webmagic.Spider;
 
@@ -40,14 +41,20 @@ public class DoMain {
 //        Spider.create(new ChinabiddingProcessor1()).addRequest(ChinabiddingProcessor1.getRequest()).thread(1).run();
         //杭州市政府采购网
 //        Spider.create(new HzftBefore1Processor()).addRequest(HzftBefore1Processor.getRequest()).thread(1).run();
-        //浙江省公共资源交易中心
+        //浙江省公共资源交易中心（招标文件公示）
 //        Spider.create(new NewZmctcBeforeProcessor1()).addRequest(NewZmctcBeforeProcessor1.getRequest()).thread(1).run();
+        //浙江省公共资源交易中心（招标公告）
+//        Spider.create(new NewZmctcBeforeProcessor2()).addUrl("http://new.zmctc.com/zjgcjy/ShowInfo/SearchResult.aspx?keyword=电梯&searchtype=title&categoryNum=004001").thread(1).run();
         //中国国际招标网(中标)
 //        Spider.create(new ChinabiddingProcessor2()).addRequest(ChinabiddingProcessor2.getRequest()).thread(1).run();
 
 
-//        //杭州市政府采购网（招标）
-        Spider.create(new HzftBefore1Processor()).addRequest(HzftBefore1Processor.getRequest()).thread(1).run();
+       //滨江政府采购网
+//        Spider.create(new NewZmctcBeforeProcessor1()).addRequest(NewZmctcBeforeProcessor1.getRequest()).thread(1).run();
+       //滨江政府采购网
+//        Spider.create(new NewZmctcBeforeProcessor2()).addUrl("http://new.zmctc.com/zjgcjy/ShowInfo/SearchResult.aspx?keyword=电梯&searchtype=title&categoryNum=004001").thread(1).run();
+
+
 
     }
 

@@ -6,22 +6,18 @@ import com.wuliangit.elevator.util.SpringUtils;
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Request;
 import us.codecraft.webmagic.Site;
-import us.codecraft.webmagic.model.HttpRequestBody;
 import us.codecraft.webmagic.processor.PageProcessor;
 import us.codecraft.webmagic.selector.Html;
 import us.codecraft.webmagic.selector.Selectable;
 import us.codecraft.webmagic.utils.HttpConstant;
 
-import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 
 /**
  * Created by Administrator on 2017/6/16.
  */
-public class NewZmctcBeforeProcessor1 implements PageProcessor{
+public class NewZmctcBeforeProcessor2 implements PageProcessor{
     private Site site = Site.me().setRetryTimes(3).setSleepTime(1000);
     
     @Override
@@ -30,6 +26,7 @@ public class NewZmctcBeforeProcessor1 implements PageProcessor{
          Html html = page.getHtml();
          if(page.getUrl().regex("http://new.zmctc.com/zjgcjy/infodetail/.*").match()){
              String title = html.xpath("//*[@id=\"tdTitle\"]/font[1]/b/text()").toString();
+             System.out.println(html.xpath("//*[@id=\"tdTitle\"]/font[2]/text()").toString().substring(7,16));
              if(bidService.isExistByTitle(title)){
                  return;
              }
@@ -37,7 +34,7 @@ public class NewZmctcBeforeProcessor1 implements PageProcessor{
              Bid bid = new Bid();
              bid.setUrl(page.getUrl().toString());
              bid.setPublicTime(html.xpath("//*[@id=\"tdTitle\"]/font[2]/text()").toString().substring(7,16));
-             bid.setContent(html.xpath("//*[@id=\"TDContent\"]/div/table").toString());
+             bid.setContent(html.xpath("//*[@id=\"TDContent\"]/div[2]").toString().replaceAll("(\0|\\s*|\r|\n)",""));
              bid.setType("ZHAOBIAO");
              bid.setTitle(title);
              bidService.insertBid(bid);
@@ -53,17 +50,4 @@ public class NewZmctcBeforeProcessor1 implements PageProcessor{
         return site;
     }
 
-    public static Request[] getRequest() {
-
-        ArrayList<Request> requests = new ArrayList<Request>();
-
-        for (int i = 1; i <= 2; i++) {
-
-            Request request = new Request("http://new.zmctc.com/zjgcjy/showinfo/searchresult.aspx?keyword=电梯&CategoryNum=&searchtype=title&Paging="+i);
-            //设置get请求
-            request.setMethod(HttpConstant.Method.GET);
-            requests.add(request);
-        }
-        return requests.toArray(new Request[] {});
-    }
 }
