@@ -4,11 +4,6 @@ import com.wuliangit.elevator.service.BidService;
 import com.wuliangit.elevator.util.SpringUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-<<<<<<< HEAD
-=======
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
->>>>>>> 0fb8ea41415cd14730d16fc0d847b6bc4337d1a4
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Request;
 import us.codecraft.webmagic.Site;
@@ -17,12 +12,10 @@ import us.codecraft.webmagic.processor.PageProcessor;
 import us.codecraft.webmagic.selector.Html;
 import us.codecraft.webmagic.selector.Selectable;
 import us.codecraft.webmagic.utils.HttpConstant;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
@@ -35,7 +28,6 @@ import java.util.Map;
 //投标
 public class HzftBefore1Processor implements PageProcessor{
     private Site site = Site.me().setRetryTimes(3).setSleepTime(1000);
-    private static final String HZFT_BEFORE_URL = "http://cg.hzft.gov.cn/www/noticelist.do";
     @Override
     public void process(Page page) {
         BidService bidService = SpringUtils.getBean(BidService.class);
@@ -97,11 +89,7 @@ public class HzftBefore1Processor implements PageProcessor{
             // 获取URLConnection对象对应的输出流
             out = new PrintWriter(conn.getOutputStream());
             // 发送请求参数
-<<<<<<< HEAD
             String param = "page.pageNum=1&parameters['noticetype']=3&parameters['title']=电梯";
-=======
-            String param = "page.pageNum=1&parameters['noticetype']=3&parameters['title']=电梯".toString();
->>>>>>> 0fb8ea41415cd14730d16fc0d847b6bc4337d1a4
             out.print(param);
             // flush输出流的缓冲
             out.flush();

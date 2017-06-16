@@ -1,9 +1,11 @@
 package com.wuliangit.elevator;
 
+import com.sun.org.apache.bcel.internal.generic.NEW;
 import com.wuliangit.elevator.dao.BidMapper;
 import com.wuliangit.elevator.spider.chinabidding.ChinabiddingProcessor1;
 import com.wuliangit.elevator.spider.hzctc.HzctcBefore1Processor;
 import com.wuliangit.elevator.spider.hzft.HzftBefore1Processor;
+import com.wuliangit.elevator.spider.newZmctc.NewZmctcBeforeProcessor1;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import us.codecraft.webmagic.Spider;
 
@@ -11,7 +13,6 @@ import us.codecraft.webmagic.Spider;
  * Created by nilme on 2017/6/13.
  */
 public class DoMain {
-
 
     public static void main(String[] args) {
         new ClassPathXmlApplicationContext("spring-context.xml");
@@ -37,7 +38,10 @@ public class DoMain {
 
         //中国国际招标网
 //        Spider.create(new ChinabiddingProcessor1()).addRequest(ChinabiddingProcessor1.getRequest()).thread(1).run();
-        Spider.create(new HzftBefore1Processor()).addRequest(HzftBefore1Processor.getRequest()).thread(1).run();
+        //杭州市政府采购网
+//        Spider.create(new HzftBefore1Processor()).addRequest(HzftBefore1Processor.getRequest()).thread(1).run();
+        //浙江省公共资源交易中心
+        Spider.create(new NewZmctcBeforeProcessor1()).addRequest(NewZmctcBeforeProcessor1.getRequest()).thread(1).run();
 
     }
 
