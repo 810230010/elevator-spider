@@ -17,7 +17,7 @@
 临安公共资源交易中心 http://laspzx.linan.gov.cn:8080/   
 宁波 宁波政府采购 http://www.nbzfcg.cn/   
 宁波市公共资源交易中心 http://www.bidding.gov.cn/   
-宁波市国际招标有限公司 http://www.nbbidding.com/a/   
+宁波市国际招标有限公司 http://www.nbbidding.com/a/     -------
 宁波中基国际招标有限公司 http://www.cbbidding.com/   
 宁波市建设工程招标投标管理办公室 http://www.nbctc.com.cn/     -------地址不对
 宁波市海曙区公共资源交易中心 http://ggzy.haishu.gov.cn/ git 
