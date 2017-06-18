@@ -11,10 +11,10 @@
 萧山区招投标交易中心 http://115.236.5.251:82/Index.aspx   
 余杭区公共资源交易中心 http://www.yhggzy.com.cn/index.aspx   
 淳安公共资源交易中心 http://www.cajyzx.org.cn:8080/chunanweb/   
-富阳公共资源交易中心 http://218.108.102.39:8091/index.aspx  ------服务器不能访问
+富阳公共资源交易中心 http://218.108.102.39:8091/index.aspx  ------url错误 网页有数据但是页面有错误 有待扒取 pang
 建德公共资源交易中心 http://jdjyzx.jdsp.gov.cn/index.aspx   
 桐庐公共资源交易中心 http://www.tlztb.com/index.aspx   
-临安公共资源交易中心 http://laspzx.linan.gov.cn:8080/   
+临安公共资源交易中心 http://laspzx.linan.gov.cn:8080/   -------url错误 网页无电梯相关数据 pang
 宁波 宁波政府采购 http://www.nbzfcg.cn/   
 宁波市公共资源交易中心 http://www.bidding.gov.cn/   
 宁波市国际招标有限公司 http://www.nbbidding.com/a/     -------
@@ -44,5 +44,5 @@
 嵊州市公共资源交易网 http://www.szztb.gov.cn/   
 新昌县公共资源交易网 http://www.xcztb.gov.cn/TPFront/   
 台州 台州公共资源交易网 http://www.tzztb.com/tzcms/   
-临海市公共资源交易中心 http://www.lhztb.gov.cn/   
+临海市公共资源交易中心 http://www.lhztb.gov.cn/   -------pang
 天台县公共资源
