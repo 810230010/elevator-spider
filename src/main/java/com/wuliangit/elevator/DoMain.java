@@ -57,7 +57,7 @@ public class DoMain {
         //Spider.create(new NbbiddingAfterProcessor1()).addRequest(NbbiddingAfterProcessor1.getRequest()).thread(2).run();
 
         //临海市公共资源交易中心
-        Spider.create(new LhztbProcessor1()).addRequest(LhztbProcessor1.getRequest()).thread(2).run();
+//        Spider.create(new LhztbProcessor1()).addRequest(LhztbProcessor1.getRequest()).thread(2).run();
 
     }
 

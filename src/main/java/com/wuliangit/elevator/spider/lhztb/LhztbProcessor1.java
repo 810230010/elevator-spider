@@ -57,7 +57,6 @@ public class LhztbProcessor1 implements PageProcessor {
             bid.setTitle(title);
             bidService.insertBid(bid);
         }else{
-            System.out.println("这是总页面");
             Selectable selectable = html.xpath("//*[@id=\"Table2\"]/tbody/tr/td[3]/table[3]/tbody/tr/td/table[2]/tbody");
             Selectable links = selectable.links();
             page.addTargetRequests(selectable.links().regex("http://www.lhztb.gov.cn/Bulletin/info.asp.*").all());
