@@ -10,6 +10,8 @@ import com.wuliangit.elevator.spider.lhztb.LhztbProcessor1;
 import com.wuliangit.elevator.spider.nbbidding.NbbiddingBeforeProcessor1;
 import com.wuliangit.elevator.spider.newZmctc.NewZmctcBeforeProcessor1;
 import com.wuliangit.elevator.spider.newZmctc.NewZmctcBeforeProcessor2;
+import com.wuliangit.elevator.spider.tzztb.TzztbAfterProcessor1;
+import com.wuliangit.elevator.spider.tzztb.TzztbBeforeProcessor1;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import us.codecraft.webmagic.Spider;
 
@@ -58,6 +60,11 @@ public class DoMain {
 
         //临海市公共资源交易中心
 //        Spider.create(new LhztbProcessor1()).addRequest(LhztbProcessor1.getRequest()).thread(2).run();
+
+        //台州公共资源交易网（招标)
+//        Spider.create(new TzztbBeforeProcessor1()).addRequest(TzztbBeforeProcessor1.getRequest()).thread(4).run();
+        //台州公共资源交易网（中标）
+        Spider.create(new TzztbAfterProcessor1()).addRequest(TzztbAfterProcessor1.getRequest()).thread(4).run();
 
     }
 
