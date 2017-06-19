@@ -10,6 +10,7 @@ import com.wuliangit.elevator.spider.lhztb.LhztbProcessor1;
 import com.wuliangit.elevator.spider.nbbidding.NbbiddingBeforeProcessor1;
 import com.wuliangit.elevator.spider.newZmctc.NewZmctcBeforeProcessor1;
 import com.wuliangit.elevator.spider.newZmctc.NewZmctcBeforeProcessor2;
+import com.wuliangit.elevator.spider.szztb.SzztbProcessor1;
 import com.wuliangit.elevator.spider.tzztb.TzztbAfterProcessor1;
 import com.wuliangit.elevator.spider.tzztb.TzztbBeforeProcessor1;
 import com.wuliangit.elevator.spider.xcztb.XcztbAfterProcessor1;
@@ -77,7 +78,10 @@ public class DoMain {
         //新昌县公共资源交易网（采购）
 //        Spider.create(new XcztbBeforeProcessor2()).addRequest(XcztbBeforeProcessor2.getRequest()).thread(1).run();
         //新昌县公共资源交易网（采购成功）
-        Spider.create(new XcztbAfterProcessor2()).addRequest(XcztbAfterProcessor2.getRequest()).thread(1).run();
+//        Spider.create(new XcztbAfterProcessor2()).addRequest(XcztbAfterProcessor2.getRequest()).thread(1).run();
+
+        //嵊州市公共资源交易网
+        Spider.create(new SzztbProcessor1()).addRequest(SzztbProcessor1.getRequest()).thread(1).run();
 
     }
 
