@@ -12,6 +12,10 @@ import com.wuliangit.elevator.spider.newZmctc.NewZmctcBeforeProcessor1;
 import com.wuliangit.elevator.spider.newZmctc.NewZmctcBeforeProcessor2;
 import com.wuliangit.elevator.spider.tzztb.TzztbAfterProcessor1;
 import com.wuliangit.elevator.spider.tzztb.TzztbBeforeProcessor1;
+import com.wuliangit.elevator.spider.xcztb.XcztbAfterProcessor1;
+import com.wuliangit.elevator.spider.xcztb.XcztbAfterProcessor2;
+import com.wuliangit.elevator.spider.xcztb.XcztbBeforeProcessor1;
+import com.wuliangit.elevator.spider.xcztb.XcztbBeforeProcessor2;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import us.codecraft.webmagic.Spider;
 
@@ -64,7 +68,16 @@ public class DoMain {
         //台州公共资源交易网（招标)
 //        Spider.create(new TzztbBeforeProcessor1()).addRequest(TzztbBeforeProcessor1.getRequest()).thread(4).run();
         //台州公共资源交易网（中标）
-        Spider.create(new TzztbAfterProcessor1()).addRequest(TzztbAfterProcessor1.getRequest()).thread(4).run();
+//        Spider.create(new TzztbAfterProcessor1()).addRequest(TzztbAfterProcessor1.getRequest()).thread(4).run();
+
+        //新昌县公共资源交易网（招标）
+//        Spider.create(new XcztbBeforeProcessor1()).addRequest(XcztbBeforeProcessor1.getRequest()).thread(1).run();
+        //新昌县公共资源交易网（中标）
+//        Spider.create(new XcztbAfterProcessor1()).addRequest(XcztbAfterProcessor1.getRequest()).thread(1).run();
+        //新昌县公共资源交易网（采购）
+//        Spider.create(new XcztbBeforeProcessor2()).addRequest(XcztbBeforeProcessor2.getRequest()).thread(1).run();
+        //新昌县公共资源交易网（采购成功）
+        Spider.create(new XcztbAfterProcessor2()).addRequest(XcztbAfterProcessor2.getRequest()).thread(1).run();
 
     }
 
