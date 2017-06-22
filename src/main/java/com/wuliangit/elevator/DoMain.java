@@ -10,6 +10,10 @@ import com.wuliangit.elevator.spider.nbbidding.NbbiddingAfterProcessor1;
 import com.wuliangit.elevator.spider.nbbidding.NbbiddingBeforeProcessor1;
 import com.wuliangit.elevator.spider.newZmctc.NewZmctcBeforeProcessor1;
 import com.wuliangit.elevator.spider.newZmctc.NewZmctcBeforeProcessor2;
+import com.wuliangit.elevator.spider.zjztb.ZjztbAfterProcessor1;
+import com.wuliangit.elevator.spider.zjztb.ZjztbAfterProcessor2;
+import com.wuliangit.elevator.spider.zjztb.ZjztbBeforeProcessor1;
+import com.wuliangit.elevator.spider.zjztb.ZjztbBeforeProcessor2;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import us.codecraft.webmagic.Spider;
 
@@ -56,6 +60,34 @@ public class DoMain {
         //宁波市国际招标有限公司(中标)
         //Spider.create(new NbbiddingAfterProcessor1()).addRequest(NbbiddingAfterProcessor1.getRequest()).thread(2).run();
 
+        //临海市公共资源交易中心
+//        Spider.create(new LhztbProcessor1()).addRequest(LhztbProcessor1.getRequest()).thread(2).run();
+
+        //台州公共资源交易网（招标)
+//        Spider.create(new TzztbBeforeProcessor1()).addRequest(TzztbBeforeProcessor1.getRequest()).thread(4).run();
+        //台州公共资源交易网（中标）
+//        Spider.create(new TzztbAfterProcessor1()).addRequest(TzztbAfterProcessor1.getRequest()).thread(4).run();
+
+        //新昌县公共资源交易网（招标）
+//        Spider.create(new XcztbBeforeProcessor1()).addRequest(XcztbBeforeProcessor1.getRequest()).thread(1).run();
+        //新昌县公共资源交易网（中标）
+//        Spider.create(new XcztbAfterProcessor1()).addRequest(XcztbAfterProcessor1.getRequest()).thread(1).run();
+        //新昌县公共资源交易网（采购）
+//        Spider.create(new XcztbBeforeProcessor2()).addRequest(XcztbBeforeProcessor2.getRequest()).thread(1).run();
+        //新昌县公共资源交易网（采购成功）
+//        Spider.create(new XcztbAfterProcessor2()).addRequest(XcztbAfterProcessor2.getRequest()).thread(1).run();
+
+        //嵊州市公共资源交易网
+//        Spider.create(new SzztbProcessor1()).addRequest(SzztbProcessor1.getRequest()).thread(1).run();
+
+        //诸暨市公共资源交易网招标
+//        Spider.create(new ZjztbBeforeProcessor1()).addRequest(ZjztbBeforeProcessor1.getRequest()).thread(4).run();
+        //诸暨市公共资源交易网中标
+//        Spider.create(new ZjztbAfterProcessor1()).addRequest(ZjztbAfterProcessor1.getRequest()).thread(4).run();
+        //诸暨市公共资源交易网采购
+//        Spider.create(new ZjztbBeforeProcessor2()).addRequest(ZjztbBeforeProcessor2.getRequest()).thread(2).run();
+        //诸暨市公共资源交易网采购成功
+        Spider.create(new ZjztbAfterProcessor2()).addRequest(ZjztbAfterProcessor2.getRequest()).thread(2).run();
     }
 
 }
