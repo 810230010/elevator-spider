@@ -1,4 +1,4 @@
-package com.wuliangit.elevator.spider.tzztb;
+package com.wuliangit.elevator.spider.zjztb;
 
 import com.wuliangit.elevator.entity.Bid;
 import com.wuliangit.elevator.service.BidService;
@@ -14,14 +14,15 @@ import us.codecraft.webmagic.utils.HttpConstant;
 import java.util.ArrayList;
 import java.util.regex.Pattern;
 
+import static com.wuliangit.elevator.spider.Common.BID_STATE_ZHAOBIAO;
 import static com.wuliangit.elevator.spider.Common.BID_STATE_ZHONGBIAO;
 
 /**
  * @author boom
- * @description 台州中标
- * @create 2017-06-19 11:54
+ * @description 诸暨市公共资源交易网中标
+ * @create 2017-06-22 9:50
  **/
-public class TzztbAfterProcessor1 implements PageProcessor {
+public class ZjztbAfterProcessor1 implements PageProcessor {
 
     private Site site = Site.me().setRetryTimes(3).setSleepTime(2000);
 
@@ -29,19 +30,12 @@ public class TzztbAfterProcessor1 implements PageProcessor {
     public void process(Page page) {
         BidService bidService = SpringUtils.getBean(BidService.class);
         Html html = page.getHtml();
-        if(page.getUrl().regex("http://www.tzztb.com/tzcms/gcjyzbjg/index_.*").match()){
-            Selectable selectable = html.xpath("/html/body/div[2]/div[3]/div/div/div[2]/div[2]");
-            Selectable links = selectable.links();
-            page.addTargetRequests(selectable.links().regex("http://www.tzztb.com/tzcms/gcjyzbjg.*").all());
-        }else{
-            String title = html.xpath("/html/body/div[2]/div[3]/div/div[1]/div/div[2]/font/text()").toString();
+        if(page.getUrl().regex("http://www.zjztb.gov.cn/TPFront/infodetail/.*").match()){
+            String title = html.xpath("/html/body/div[4]/div/div[2]/div[1]/text()").toString();
+            Bid bid = new Bid();
             String regExBefore1 = ".*电梯.*";
             Pattern pBefore1 = Pattern.compile(regExBefore1);
-            Bid bid = new Bid();
             if(pBefore1.matcher(title).find()){
-                if(bidService.isExistByTitle(title)){
-                    return;
-                }
                 bid.setType(BID_STATE_ZHONGBIAO);
             }else{
                 System.out.println("不符合采集规则");
@@ -49,10 +43,14 @@ public class TzztbAfterProcessor1 implements PageProcessor {
                 return;
             }
             bid.setUrl(page.getUrl().toString());
-            bid.setPublicTime(html.xpath("/html/body/div[2]/div[3]/div/div[1]/div/div[2]/em/text()").toString().substring(5,16));
-            bid.setContent(html.xpath("/html/body/div[2]/div[3]/div/div[1]/div/div[2]/div").toString().replaceAll("(\0|\\s*|\r|\n|\t)",""));
+            bid.setPublicTime(html.xpath("/html/body/div[4]/div/div[2]/div[2]/text()").toString().substring(7,15));
+            bid.setContent(html.xpath("/html/body/div[4]/div/div[2]/div[3]").toString().replaceAll("(\0|\\s*|\r|\n|\t)",""));
             bid.setTitle(title);
             bidService.insertBid(bid);
+        }else{
+            Selectable selectable = html.xpath("/html/body/div[4]/div/table/tbody/tr/td[2]/div/div[2]/div[2]/div[1]/table");
+            Selectable links = selectable.links();
+            page.addTargetRequests(selectable.links().regex("http://www.zjztb.gov.cn/TPFront/infodetail/.*").all());
         }
     }
 
@@ -65,10 +63,9 @@ public class TzztbAfterProcessor1 implements PageProcessor {
 
         ArrayList<Request> requests = new ArrayList<Request>();
 
-        for (int i = 1; i <= 25; i++) {
+        for (int i = 1; i <= 27; i++) {
 
-            String url = "http://www.tzztb.com/tzcms/gcjyzbjg/index_" + i + ".htm";
-            Request request = new Request(url);
+            Request request = new Request("http://www.zjztb.gov.cn/TPFront/jsgc/026003/?Paging="+i);
             //设置get请求
             request.setMethod(HttpConstant.Method.GET);
             requests.add(request);

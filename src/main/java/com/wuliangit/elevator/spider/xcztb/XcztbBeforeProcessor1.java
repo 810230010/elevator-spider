@@ -36,6 +36,9 @@ public class XcztbBeforeProcessor1 implements PageProcessor {
             Pattern pBefore1 = Pattern.compile(regExBefore1);
             Bid bid = new Bid();
             if(pBefore1.matcher(title).find()){
+                if(bidService.isExistByTitle(title)){
+                    return;
+                }
                 bid.setType(BID_STATE_ZHAOBIAO);
             }else{
                 System.out.println("不符合采集规则");

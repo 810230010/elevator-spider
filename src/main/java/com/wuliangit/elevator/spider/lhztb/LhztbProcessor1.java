@@ -43,8 +43,14 @@ public class LhztbProcessor1 implements PageProcessor {
             Pattern pAfter2= Pattern.compile(regExAfter2);
             Bid bid = new Bid();
             if(pBefore1.matcher(title).find() || pBefore2.matcher(title).find()){
+                if(bidService.isExistByTitle(title)){
+                    return;
+                }
                 bid.setType(BID_STATE_ZHAOBIAO);
             }else if(pAfter1.matcher(title).find() || pAfter2.matcher(title).find()){
+                if(bidService.isExistByTitle(title)){
+                    return;
+                }
                 bid.setType(BID_STATE_ZHONGBIAO);
             }else{
                 System.out.println("不符合采集规则");

@@ -1,22 +1,9 @@
 package com.wuliangit.elevator;
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
-import com.wuliangit.elevator.dao.BidMapper;
-import com.wuliangit.elevator.spider.chinabidding.ChinabiddingProcessor1;
-import com.wuliangit.elevator.spider.chinabidding.ChinabiddingProcessor2;
-import com.wuliangit.elevator.spider.hzctc.HzctcBefore1Processor;
-import com.wuliangit.elevator.spider.hzft.HzftBefore1Processor;
-import com.wuliangit.elevator.spider.lhztb.LhztbProcessor1;
-import com.wuliangit.elevator.spider.nbbidding.NbbiddingBeforeProcessor1;
-import com.wuliangit.elevator.spider.newZmctc.NewZmctcBeforeProcessor1;
-import com.wuliangit.elevator.spider.newZmctc.NewZmctcBeforeProcessor2;
-import com.wuliangit.elevator.spider.szztb.SzztbProcessor1;
-import com.wuliangit.elevator.spider.tzztb.TzztbAfterProcessor1;
-import com.wuliangit.elevator.spider.tzztb.TzztbBeforeProcessor1;
-import com.wuliangit.elevator.spider.xcztb.XcztbAfterProcessor1;
-import com.wuliangit.elevator.spider.xcztb.XcztbAfterProcessor2;
-import com.wuliangit.elevator.spider.xcztb.XcztbBeforeProcessor1;
-import com.wuliangit.elevator.spider.xcztb.XcztbBeforeProcessor2;
+import com.wuliangit.elevator.spider.zjztb.ZjztbAfterProcessor1;
+import com.wuliangit.elevator.spider.zjztb.ZjztbAfterProcessor2;
+import com.wuliangit.elevator.spider.zjztb.ZjztbBeforeProcessor1;
+import com.wuliangit.elevator.spider.zjztb.ZjztbBeforeProcessor2;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import us.codecraft.webmagic.Spider;
 
@@ -81,8 +68,16 @@ public class DoMain {
 //        Spider.create(new XcztbAfterProcessor2()).addRequest(XcztbAfterProcessor2.getRequest()).thread(1).run();
 
         //嵊州市公共资源交易网
-        Spider.create(new SzztbProcessor1()).addRequest(SzztbProcessor1.getRequest()).thread(1).run();
+//        Spider.create(new SzztbProcessor1()).addRequest(SzztbProcessor1.getRequest()).thread(1).run();
 
+        //诸暨市公共资源交易网招标
+//        Spider.create(new ZjztbBeforeProcessor1()).addRequest(ZjztbBeforeProcessor1.getRequest()).thread(4).run();
+        //诸暨市公共资源交易网中标
+//        Spider.create(new ZjztbAfterProcessor1()).addRequest(ZjztbAfterProcessor1.getRequest()).thread(4).run();
+        //诸暨市公共资源交易网采购
+//        Spider.create(new ZjztbBeforeProcessor2()).addRequest(ZjztbBeforeProcessor2.getRequest()).thread(2).run();
+        //诸暨市公共资源交易网采购成功
+        Spider.create(new ZjztbAfterProcessor2()).addRequest(ZjztbAfterProcessor2.getRequest()).thread(2).run();
     }
 
 }
