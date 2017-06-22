@@ -4,12 +4,16 @@ import com.sun.org.apache.bcel.internal.generic.NEW;
 import com.wuliangit.elevator.dao.BidMapper;
 import com.wuliangit.elevator.spider.chinabidding.ChinabiddingProcessor1;
 import com.wuliangit.elevator.spider.chinabidding.ChinabiddingProcessor2;
+import com.wuliangit.elevator.spider.haishuggzy.HaishuGgzyAfter1;
+import com.wuliangit.elevator.spider.haishuggzy.HaishuGgzyBefore1;
 import com.wuliangit.elevator.spider.hzctc.HzctcBefore1Processor;
 import com.wuliangit.elevator.spider.hzft.HzftBefore1Processor;
 import com.wuliangit.elevator.spider.nbbidding.NbbiddingAfterProcessor1;
 import com.wuliangit.elevator.spider.nbbidding.NbbiddingBeforeProcessor1;
 import com.wuliangit.elevator.spider.newZmctc.NewZmctcBeforeProcessor1;
 import com.wuliangit.elevator.spider.newZmctc.NewZmctcBeforeProcessor2;
+import com.wuliangit.elevator.spider.zhztb.ZhztbAfter1;
+import com.wuliangit.elevator.spider.zhztb.ZhztbBefore1;
 import com.wuliangit.elevator.spider.zjztb.ZjztbAfterProcessor1;
 import com.wuliangit.elevator.spider.zjztb.ZjztbAfterProcessor2;
 import com.wuliangit.elevator.spider.zjztb.ZjztbBeforeProcessor1;
@@ -87,7 +91,16 @@ public class DoMain {
         //诸暨市公共资源交易网采购
 //        Spider.create(new ZjztbBeforeProcessor2()).addRequest(ZjztbBeforeProcessor2.getRequest()).thread(2).run();
         //诸暨市公共资源交易网采购成功
-        Spider.create(new ZjztbAfterProcessor2()).addRequest(ZjztbAfterProcessor2.getRequest()).thread(2).run();
+     //   Spider.create(new ZjztbAfterProcessor2()).addRequest(ZjztbAfterProcessor2.getRequest()).thread(2).run();
+      //宁波市海曙区公共资源交易中心(招标)
+        //Spider.create(new HaishuGgzyBefore1()).addRequest(HaishuGgzyBefore1.getRequest()).thread(2).run();
+        //宁波市海曙区公共资源交易中心(中标)
+        //Spider.create(new HaishuGgzyAfter1()).addRequest(HaishuGgzyAfter1.getRequest()).thread(2).run();
+
+        //镇海公共资源交易中心(招标)
+        //Spider.create(new ZhztbBefore1()).addRequest(ZhztbBefore1.getRequest()).thread(2).run();
+        // 镇海公共资源交易中心(中标)
+        //Spider.create(new ZhztbAfter1()).addRequest(ZhztbAfter1.getRequest()).thread(2).run();
     }
 
 }

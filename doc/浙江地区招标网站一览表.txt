@@ -8,24 +8,24 @@
 杭州市政府采购网 http://cg.hzft.gov.cn/www/index.do        -------
 浙江省公共资源交易中心 http://new.zmctc.com/zjgcjy/       -----
 滨江政府采购网 http://www.hhtz.gov.cn/                ------- 没有电梯项目,分页没有网络请求
-萧山区招投标交易中心 http://115.236.5.251:82/Index.aspx   
-余杭区公共资源交易中心 http://www.yhggzy.com.cn/index.aspx   
-淳安公共资源交易中心 http://www.cajyzx.org.cn:8080/chunanweb/   
+萧山区招投标交易中心 http://115.236.5.251:82/Index.aspx         TODO:网页出现大字段view_state
+余杭区公共资源交易中心 http://www.yhggzy.com.cn/index.aspx       TODO:网页出现大字段view_state
+淳安公共资源交易中心 http://www.cajyzx.org.cn:8080/chunanweb/    TODO:网页出现大字段view_state
 富阳公共资源交易中心 http://218.108.102.39:8091/index.aspx  ------url错误 网页有数据但是页面有错误 有待扒取 pang
-建德公共资源交易中心 http://jdjyzx.jdsp.gov.cn/index.aspx   
-桐庐公共资源交易中心 http://www.tlztb.com/index.aspx   
+建德公共资源交易中心 http://jdjyzx.jdsp.gov.cn/index.aspx     TODO:网页出现大字段view_state
+桐庐公共资源交易中心 http://www.tlztb.com/index.aspx         TODO:网页出现大字段view_state
 临安公共资源交易中心 http://laspzx.linan.gov.cn:8080/   -------url错误 网页无电梯相关数据 pang
-宁波 宁波政府采购 http://www.nbzfcg.cn/   
+宁波 宁波政府采购 http://www.nbzfcg.cn/                  TODO:网页出现大字段view_state
 宁波市公共资源交易中心 http://www.bidding.gov.cn/     ------
 宁波市国际招标有限公司 http://www.nbbidding.com/a/ git    -------
-宁波中基国际招标有限公司 http://www.cbbidding.com/   
+宁波中基国际招标有限公司 http://www.cbbidding.com/         TODO:网页出现大字段view_state
 宁波市建设工程招标投标管理办公室 http://www.nbctc.com.cn/     -------地址不对
-宁波市海曙区公共资源交易中心 http://ggzy.haishu.gov.cn/ git 
-宁波市北仑区(开发区)公共资源交易中心(宁波市北仑区招投标中心) http://www.blztb.gov.cn/   
-慈溪市公共资源交易网 http://ggzy.cixi.gov.cn/   
+宁波市海曙区公共资源交易中心 http://ggzy.haishu.gov.cn/ git    ---------
+宁波市北仑区(开发区)公共资源交易中心(宁波市北仑区招投标中心) http://www.blztb.gov.cn/    TODO:没有搜索 分页较多 最后一批
+慈溪市公共资源交易网 http://ggzy.cixi.gov.cn/       TODO:没有搜索 分页较多 最后一批
 宁海县公共资源交易信息网 http://www.nhztb.gov.cn/index.jsp  ---两条数据
-宁波市鄞州区公共资源交易中心 http://www.ggjy.nbyz.gov.cn/TSPB/web/index.jsp   
-镇海公共资源交易 http://www.zhztb.gov.cn/   
+宁波市鄞州区公共资源交易中心 http://www.ggjy.nbyz.gov.cn/TSPB/web/index.jsp    TODO:没有搜索 分页较多 最后一批
+镇海公共资源交易 http://www.zhztb.gov.cn/     ---------
 余姚市招标投标网 http://www.yyztb.gov.cn   
 奉化市公共资源交易网 http://www.fhggzy.gov.cn/  
 宁波国家高新区宁波新材料科技城 http://gjgxq.ningbo.gov.cn/doc/zwgk/tzgg/  

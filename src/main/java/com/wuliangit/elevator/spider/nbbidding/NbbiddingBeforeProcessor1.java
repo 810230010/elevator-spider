@@ -25,20 +25,23 @@ public class NbbiddingBeforeProcessor1 implements PageProcessor{
         if(page.getUrl().regex("http://www.nbbidding.com/support/bidnoticeview.asp.*").match()){
             String title = html.xpath("/html/body/table[2]/tbody/tr[1]/td/b/text()").toString();
             System.out.println(title);
-            if(title.contains("电梯")){
+
                 BidService bidService = SpringUtils.getBean(BidService.class);
-                String sid = html.xpath("/html/body/table[2]/tbody/tr[2]/td[2]/text()").toString();
-                String public_time = html.xpath("/html/body/table[2]/tbody/tr[4]/td[2]/text()").toString();
-                String content = html.xpath("//*[@id=\"zoom\"]").toString();
-                Bid bid = new Bid();
-                bid.setSid(sid);
-                bid.setPublicTime(public_time);
-                bid.setTitle(title);
-                bid.setContent(content);
-                bid.setType("ZHAOBIAO");
-                bid.setUrl(page.getUrl().toString());
-                bidService.insertBid(bid);
-            }
+                if(!bidService.isExistByTitle(title)){
+                    String sid = html.xpath("/html/body/table[2]/tbody/tr[2]/td[2]/text()").toString();
+                    String public_time = html.xpath("/html/body/table[2]/tbody/tr[4]/td[2]/text()").toString();
+                    String content = html.xpath("//*[@id=\"zoom\"]").toString();
+                    Bid bid = new Bid();
+                    bid.setSid(sid);
+                    bid.setPublicTime(public_time);
+                    bid.setTitle(title);
+                    bid.setContent(content);
+                    bid.setType("ZHAOBIAO");
+                    bid.setUrl(page.getUrl().toString());
+                    bidService.insertBid(bid);
+                }
+
+
         }else{
             Selectable selectable = html.xpath("/html/body/table[2]/tbody");
             Selectable links = selectable.links();
