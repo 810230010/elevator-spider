@@ -1,19 +1,6 @@
 package com.wuliangit.elevator;
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
-import com.wuliangit.elevator.dao.BidMapper;
-import com.wuliangit.elevator.spider.chinabidding.ChinabiddingProcessor1;
-import com.wuliangit.elevator.spider.chinabidding.ChinabiddingProcessor2;
-import com.wuliangit.elevator.spider.hzctc.HzctcBefore1Processor;
-import com.wuliangit.elevator.spider.hzft.HzftBefore1Processor;
-import com.wuliangit.elevator.spider.nbbidding.NbbiddingAfterProcessor1;
-import com.wuliangit.elevator.spider.nbbidding.NbbiddingBeforeProcessor1;
-import com.wuliangit.elevator.spider.newZmctc.NewZmctcBeforeProcessor1;
-import com.wuliangit.elevator.spider.newZmctc.NewZmctcBeforeProcessor2;
-import com.wuliangit.elevator.spider.zjztb.ZjztbAfterProcessor1;
-import com.wuliangit.elevator.spider.zjztb.ZjztbAfterProcessor2;
-import com.wuliangit.elevator.spider.zjztb.ZjztbBeforeProcessor1;
-import com.wuliangit.elevator.spider.zjztb.ZjztbBeforeProcessor2;
+import com.wuliangit.elevator.spider.syztb.SyztbProcessor1;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import us.codecraft.webmagic.Spider;
 
@@ -87,7 +74,11 @@ public class DoMain {
         //诸暨市公共资源交易网采购
 //        Spider.create(new ZjztbBeforeProcessor2()).addRequest(ZjztbBeforeProcessor2.getRequest()).thread(2).run();
         //诸暨市公共资源交易网采购成功
-        Spider.create(new ZjztbAfterProcessor2()).addRequest(ZjztbAfterProcessor2.getRequest()).thread(2).run();
+//        Spider.create(new ZjztbAfterProcessor2()).addRequest(ZjztbAfterProcessor2.getRequest()).thread(2).run();
+
+        //绍兴市上虞区
+        Spider.create(new SyztbProcessor1()).addRequest(SyztbProcessor1.getRequest()).thread(1).run();
+
     }
 
 }
