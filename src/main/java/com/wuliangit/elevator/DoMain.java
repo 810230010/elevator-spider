@@ -1,6 +1,9 @@
 package com.wuliangit.elevator;
 
-import com.wuliangit.elevator.spider.syztb.SyztbProcessor1;
+import com.wuliangit.elevator.spider.sxxztb.SxxztbAfterProcessor1;
+import com.wuliangit.elevator.spider.sxxztb.SxxztbAfterProcessor2;
+import com.wuliangit.elevator.spider.sxxztb.SxxztbBeforeProcessor1;
+import com.wuliangit.elevator.spider.sxxztb.SxxztbBeforeProcessor2;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import us.codecraft.webmagic.Spider;
 
@@ -77,7 +80,16 @@ public class DoMain {
 //        Spider.create(new ZjztbAfterProcessor2()).addRequest(ZjztbAfterProcessor2.getRequest()).thread(2).run();
 
         //绍兴市上虞区
-        Spider.create(new SyztbProcessor1()).addRequest(SyztbProcessor1.getRequest()).thread(1).run();
+//        Spider.create(new SyztbProcessor1()).addRequest(SyztbProcessor1.getRequest()).thread(1).run();
+
+        //绍兴市柯桥区招标
+//        Spider.create(new SxxztbBeforeProcessor1()).addRequest(SxxztbBeforeProcessor1.getRequest()).thread(4).run();
+        //绍兴市柯桥区中标
+//        Spider.create(new SxxztbAfterProcessor1()).addRequest(SxxztbAfterProcessor1.getRequest()).thread(4).run();
+        //绍兴市柯桥区采购
+//        Spider.create(new SxxztbBeforeProcessor2()).addRequest(SxxztbBeforeProcessor2.getRequest()).thread(4).run();
+        //绍兴市柯桥区采购成功
+        Spider.create(new SxxztbAfterProcessor2()).addRequest(SxxztbAfterProcessor2.getRequest()).thread(4).run();
 
     }
 

@@ -5,24 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4df69d39-621c-4ecf-8828-5ce73c32d4e4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/syztb/SyztbProcessor1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/sxxztb/SxxztbAfterProcessor1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/sxxztb/SxxztbAfterProcessor2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/sxxztb/SxxztbBeforeProcessor1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/sxxztb/SxxztbBeforeProcessor2.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/浙江地区招标网站一览表.txt" afterPath="$PROJECT_DIR$/doc/浙江地区招标网站一览表.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/DoMain.java" afterPath="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/DoMain.java" />
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/nbbidding/NbbiddingAfterProcessor1.java" afterPath="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/nbbidding/NbbiddingAfterProcessor1.java" />
-=======
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/lhztb/LhztbProcessor1.java" afterPath="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/lhztb/LhztbProcessor1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/tzztb/TzztbAfterProcessor1.java" afterPath="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/tzztb/TzztbAfterProcessor1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/tzztb/TzztbBeforeProcessor1.java" afterPath="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/tzztb/TzztbBeforeProcessor1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/xcztb/XcztbAfterProcessor1.java" afterPath="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/xcztb/XcztbAfterProcessor1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/xcztb/XcztbAfterProcessor2.java" afterPath="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/xcztb/XcztbAfterProcessor2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/xcztb/XcztbBeforeProcessor1.java" afterPath="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/xcztb/XcztbBeforeProcessor1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/xcztb/XcztbBeforeProcessor2.java" afterPath="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/xcztb/XcztbBeforeProcessor2.java" />
->>>>>>> a94df4cbd49628d3398429bacc48548198e86cfc
-=======
->>>>>>> Stashed changes
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/Common.java" afterPath="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/Common.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,115 +28,14 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DoMain.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DoMain.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/DoMain.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-            <state relative-caret-position="122">
-              <caret line="45" column="64" lean-forward="true" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
-              <folding />
-=======
-            <state relative-caret-position="-1414">
+            <state relative-caret-position="336">
               <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-=======
-            <state relative-caret-position="218">
-              <caret line="69" column="22" lean-forward="true" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
->>>>>>> Stashed changes
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< Updated upstream
-      <file leaf-file-name="XcztbAfterProcessor1.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/xcztb/XcztbAfterProcessor1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="40" column="17" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#2505#2506#0" expanded="false" />
-                <element signature="e#2532#2533#0" expanded="false" />
-              </folding>
->>>>>>> a94df4cbd49628d3398429bacc48548198e86cfc
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="浙江地区招标网站一览表.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/doc/浙江地区招标网站一览表.txt">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="176">
-              <caret line="17" column="81" lean-forward="true" selection-start-line="17" selection-start-column="81" selection-end-line="17" selection-end-column="81" />
-=======
-            <state relative-caret-position="239">
-              <caret line="42" column="57" lean-forward="true" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
->>>>>>> a94df4cbd49628d3398429bacc48548198e86cfc
-=======
-      <file leaf-file-name="浙江地区招标网站一览表.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doc/浙江地区招标网站一览表.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="41" column="55" lean-forward="false" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
->>>>>>> Stashed changes
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-      <file leaf-file-name="NbbiddingBeforeProcessor1.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/nbbidding/NbbiddingBeforeProcessor1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="28" column="64" lean-forward="true" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
-=======
-      <file leaf-file-name="XcztbAfterProcessor2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/xcztb/XcztbAfterProcessor2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
->>>>>>> a94df4cbd49628d3398429bacc48548198e86cfc
-=======
-      <file leaf-file-name="SyztbProcessor1.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/syztb/SyztbProcessor1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="51" column="22" lean-forward="false" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
->>>>>>> Stashed changes
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3081#3082#0" expanded="true" />
-                <element signature="e#3108#3109#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LhztbProcessor1.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/lhztb/LhztbProcessor1.java">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-            <state relative-caret-position="198">
-              <caret line="58" column="41" lean-forward="false" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
-=======
-            <state relative-caret-position="625">
-              <caret line="40" column="17" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#2505#2506#0" expanded="false" />
-                <element signature="e#2532#2533#0" expanded="false" />
-              </folding>
-=======
-            <state relative-caret-position="375">
-              <caret line="31" column="38" lean-forward="false" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -154,84 +43,91 @@
       <file leaf-file-name="SzztbProcessor1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/szztb/SzztbProcessor1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="86" column="4" lean-forward="false" selection-start-line="86" selection-start-column="4" selection-end-line="98" selection-end-column="5" />
+            <state relative-caret-position="175">
+              <caret line="88" column="8" lean-forward="false" selection-start-line="88" selection-start-column="8" selection-end-line="97" selection-end-column="50" />
               <folding />
->>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XcztbBeforeProcessor2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/xcztb/XcztbBeforeProcessor2.java">
+      <file leaf-file-name="浙江地区招标网站一览表.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/doc/浙江地区招标网站一览表.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="37" column="16" lean-forward="false" selection-start-line="37" selection-start-column="16" selection-end-line="39" selection-end-column="17" />
-<<<<<<< Updated upstream
->>>>>>> a94df4cbd49628d3398429bacc48548198e86cfc
+            <state relative-caret-position="289">
+              <caret line="44" column="27" lean-forward="false" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="27" />
               <folding />
-=======
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#2433#2434#0" expanded="false" />
-                <element signature="e#2460#2461#0" expanded="false" />
-                <element signature="e#2558#2567#0" expanded="false" />
-              </folding>
->>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZjztbBeforeProcessor1.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/zjztb/ZjztbBeforeProcessor1.java">
+      <file leaf-file-name="SyztbProcessor1.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/syztb/SyztbProcessor1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="82" column="51" lean-forward="true" selection-start-line="82" selection-start-column="51" selection-end-line="82" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SxxztbBeforeProcessor1.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/sxxztb/SxxztbBeforeProcessor1.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
-              <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="52" selection-end-column="9" />
+              <caret line="60" column="62" lean-forward="true" selection-start-line="60" selection-start-column="62" selection-end-line="60" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SxxztbBeforeProcessor2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/sxxztb/SxxztbBeforeProcessor2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
               <folding>
-                <element signature="e#2297#2298#0" expanded="false" />
-                <element signature="e#2324#2325#0" expanded="false" />
-                <element signature="e#2422#2431#0" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2305#2306#0" expanded="true" />
+                <element signature="e#2332#2333#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZjztbBeforeProcessor2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/zjztb/ZjztbBeforeProcessor2.java">
+      <file leaf-file-name="SxxztbAfterProcessor1.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/sxxztb/SxxztbAfterProcessor1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1300">
-              <caret line="68" column="34" lean-forward="false" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
+            <state relative-caret-position="100">
+              <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="24" />
               <folding>
-                <element signature="e#2423#2432#0" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2383#2384#0" expanded="true" />
+                <element signature="e#2410#2411#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZjztbAfterProcessor1.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/zjztb/ZjztbAfterProcessor1.java">
+      <file leaf-file-name="SxxztbAfterProcessor2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/sxxztb/SxxztbAfterProcessor2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1100">
-              <caret line="61" column="4" lean-forward="false" selection-start-line="61" selection-start-column="4" selection-end-line="73" selection-end-column="5" />
+            <state relative-caret-position="329">
+              <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding>
-                <element signature="e#2369#2370#0" expanded="false" />
-                <element signature="e#2396#2397#0" expanded="false" />
-                <element signature="e#2494#2503#0" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2308#2309#0" expanded="true" />
+                <element signature="e#2335#2336#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZjztbAfterProcessor2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/zjztb/ZjztbAfterProcessor2.java">
+      <file leaf-file-name="Common.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/Common.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1350">
-              <caret line="71" column="9" lean-forward="false" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
-              <folding>
-                <element signature="e#2372#2373#0" expanded="false" />
-                <element signature="e#2399#2400#0" expanded="false" />
-                <element signature="e#2497#2506#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="275">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -269,11 +165,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/newZmctc/NewZmctcBeforeProcessor2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/newZmctc/NewZmctcAfterProcessor1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/hhzc/HhzccBeforeProcessor1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/nbbidding/NbbiddingBeforeProcessor1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/DoMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/nbbidding/NbbiddingAfterProcessor1.java" />
-<<<<<<< HEAD
-=======
         <option value="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/nbbidding/NbbiddingBeforeProcessor1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/hzft/HzftBefore1Processor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/ttzbtbzx/TtzbtbzxAfter1.java" />
@@ -293,12 +185,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/zjztb/ZjztbAfterProcessor1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/zjztb/ZjztbBeforeProcessor2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/zjztb/ZjztbAfterProcessor2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/sxxztb/SxxztbProcessor1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/sxxztb/SxxztbBeforeProcessor1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/sxxztb/SxxztbAfterProcessor1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/sxxztb/SxxztbBeforeProcessor2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/sxxztb/SxxztbAfterProcessor2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/DoMain.java" />
-<<<<<<< Updated upstream
->>>>>>> a94df4cbd49628d3398429bacc48548198e86cfc
-=======
-        <option value="$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/syztb/SyztbProcessor1.java" />
->>>>>>> Stashed changes
         <option value="$PROJECT_DIR$/doc/浙江地区招标网站一览表.txt" />
       </list>
     </option>
@@ -346,8 +238,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -474,250 +364,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zjztb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevator-spider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevator-spider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xcztb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevator-spider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevator-spider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tzztb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevator-spider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevator-spider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="szztb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevator-spider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevator-spider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="syztb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevator-spider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevator-spider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lhztb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevator-spider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevator-spider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chinabidding" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevator-spider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elevator-spider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="doc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elevator-spider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elevator-spider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1166,9 +834,6 @@
       <workItem from="1497576621411" duration="17000" />
       <workItem from="1497576687203" duration="90000" />
       <workItem from="1497577163082" duration="25592000" />
-<<<<<<< HEAD
-      <workItem from="1497663916434" duration="15555000" />
-=======
       <workItem from="1497663916434" duration="6844000" />
       <workItem from="1497685128748" duration="4765000" />
       <workItem from="1497782815200" duration="6541000" />
@@ -1177,36 +842,16 @@
       <workItem from="1497844135296" duration="18730000" />
       <workItem from="1498093770093" duration="3729000" />
       <workItem from="1498097622220" duration="3626000" />
-<<<<<<< Updated upstream
->>>>>>> a94df4cbd49628d3398429bacc48548198e86cfc
-=======
-      <workItem from="1498101306315" duration="51000" />
-      <workItem from="1498102549967" duration="3979000" />
->>>>>>> Stashed changes
+      <workItem from="1498114772424" duration="4853000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="41254000" />
+    <option name="totallyTimeSpent" value="84026000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1386" height="788" extended-state="0" />
-=======
-    <option name="totallyTimeSpent" value="79173000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
->>>>>>> a94df4cbd49628d3398429bacc48548198e86cfc
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
     <editor active="true" />
-=======
-    <option name="totallyTimeSpent" value="83203000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="false" />
->>>>>>> Stashed changes
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1228,11 +873,11 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3309859" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3309859" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298122" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298122" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3274648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29528403" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3274648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2915327" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1253,7 +898,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1262,51 +907,8 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.m2/repository/us/codecraft/webmagic-core/0.7.1/webmagic-core-0.7.1.jar!/us/codecraft/webmagic/Request.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="76" column="19" lean-forward="false" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/elevator.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-343">
-          <caret line="65" column="41" lean-forward="false" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/chinabidding/ChinabiddingProcessor2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="46" column="103" lean-forward="false" selection-start-line="46" selection-start-column="69" selection-end-line="46" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/newZmctc/NewZmctcAfterProcessor1.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/hhzc/HhzccBeforeProcessor1.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/lhztb.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/zmctc/ZmctcProcessor1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/nbbidding/NbbiddingBeforeProcessor1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="43" column="50" lean-forward="false" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/hzctc/HzctcBefore1Processor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
@@ -1337,13 +939,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/ttzbtbzx/TtzbtbzxAfter1.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/ttzbtbzx/TtzbtbzxBefore1.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/nbbidding/NbbiddingAfterProcessor1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/us/codecraft/webmagic-core/0.7.1/webmagic-core-0.7.1.jar!/us/codecraft/webmagic/downloader/HttpClientDownloader.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1414,14 +1009,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/Common.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/service/BidService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -1449,13 +1036,6 @@
         <state relative-caret-position="1100">
           <caret line="44" column="11" lean-forward="false" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
           <folding>
-<<<<<<< HEAD
-            <element signature="imports" expanded="false" />
-            <element signature="e#2964#2965#0" expanded="false" />
-            <element signature="e#2991#2992#0" expanded="false" />
-            <element signature="e#3090#3099#0" expanded="false" />
-            <element signature="e#3399#3415#0" expanded="false" />
-=======
             <marker date="1497863867432" expanded="true" signature="1297:1452" ph="select , fro... " />
             <marker date="1497863867432" expanded="true" signature="1539:1601" ph="delete from " />
             <marker date="1497863867432" expanded="true" signature="1704:1744" ph="select sid f... t_bid" />
@@ -1463,7 +1043,6 @@
             <marker date="1497863867432" expanded="true" signature="4128:4942" ph="update t_bid... " />
             <marker date="1497863867432" expanded="true" signature="5054:5463" ph="update t_bid... " />
             <marker date="1497863867432" expanded="true" signature="5566:5926" ph="update t_bid... " />
->>>>>>> a94df4cbd49628d3398429bacc48548198e86cfc
           </folding>
         </state>
       </provider>
@@ -1489,18 +1068,6 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/newZmctc/NewZmctcAfterProcessor1.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/hhzc/HhzccBeforeProcessor1.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/newZmctc/NewZmctcBeforeProcessor2.java">
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/hzft/HzftBefore1Processor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="61" column="24" lean-forward="true" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/hzctc/HzctcBefore2Processor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-179">
@@ -1508,239 +1075,225 @@
         </state>
       </provider>
     </entry>
-<<<<<<< Updated upstream
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/szztb/SzztbProcessor1.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/xcztb/XcztbBeforeProcessor1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="56" column="27" lean-forward="true" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
+        <state relative-caret-position="625">
+          <caret line="40" column="17" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/xcztb/XcztbBeforeProcessor2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="37" column="16" lean-forward="false" selection-start-line="37" selection-start-column="16" selection-end-line="39" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/zjztb/ZjztbAfterProcessor2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="63" column="42" lean-forward="false" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/hzft/HzftBefore1Processor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="88" column="35" lean-forward="true" selection-start-line="88" selection-start-column="35" selection-end-line="88" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/lhztb/LhztbProcessor1.java">
->>>>>>> a94df4cbd49628d3398429bacc48548198e86cfc
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="51" column="27" lean-forward="true" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="254">
+          <caret line="84" column="55" lean-forward="false" selection-start-line="84" selection-start-column="55" selection-end-line="84" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
-=======
->>>>>>> Stashed changes
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/nbbidding/NbbiddingAfterProcessor1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/nbbidding/NbbiddingBeforeProcessor1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-371">
+          <caret line="34" column="47" lean-forward="true" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/tzztb/TzztbAfterProcessor1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="47" column="32" lean-forward="false" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+        <state relative-caret-position="304">
+          <caret line="71" column="21" lean-forward="true" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/tzztb/TzztbBeforeProcessor1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="41" column="16" lean-forward="false" selection-start-line="41" selection-start-column="16" selection-end-line="43" selection-end-column="17" />
-          <folding>
-            <element signature="e#2405#2406#0" expanded="false" />
-            <element signature="e#2432#2433#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="354">
+          <caret line="73" column="34" lean-forward="true" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/xcztb/XcztbAfterProcessor1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="40" column="17" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        <state relative-caret-position="314">
+          <caret line="72" column="43" lean-forward="false" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/xcztb/XcztbAfterProcessor2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
+        <state relative-caret-position="464">
           <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/xcztb/XcztbBeforeProcessor1.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/zjztb/ZjztbBeforeProcessor2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="40" column="17" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        <state relative-caret-position="54">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2505#2506#0" expanded="false" />
-            <element signature="e#2532#2533#0" expanded="false" />
-            <element signature="e#2630#2639#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/zjztb/ZjztbBeforeProcessor1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="52" selection-end-column="9" />
-          <folding>
-            <element signature="e#2297#2298#0" expanded="false" />
-            <element signature="e#2324#2325#0" expanded="false" />
-            <element signature="e#2422#2431#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/chinabidding/ChinabiddingProcessor2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="46" column="102" lean-forward="false" selection-start-line="46" selection-start-column="69" selection-end-line="46" selection-end-column="102" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/xcztb/XcztbBeforeProcessor2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="37" column="16" lean-forward="false" selection-start-line="37" selection-start-column="16" selection-end-line="39" selection-end-column="17" />
-<<<<<<< Updated upstream
->>>>>>> a94df4cbd49628d3398429bacc48548198e86cfc
-          <folding />
-=======
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2433#2434#0" expanded="false" />
-            <element signature="e#2460#2461#0" expanded="false" />
-            <element signature="e#2558#2567#0" expanded="false" />
-          </folding>
->>>>>>> Stashed changes
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/nbbidding/NbbiddingBeforeProcessor1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="28" column="64" lean-forward="true" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
+        <state relative-caret-position="325">
+          <caret line="71" column="50" lean-forward="true" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2129#2130#0" expanded="true" />
-            <element signature="e#2156#2157#0" expanded="true" />
-=======
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/zjztb/ZjztbAfterProcessor1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="61" column="4" lean-forward="false" selection-start-line="61" selection-start-column="4" selection-end-line="73" selection-end-column="5" />
+        <state relative-caret-position="279">
+          <caret line="67" column="42" lean-forward="false" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
           <folding>
-            <element signature="e#2369#2370#0" expanded="false" />
-            <element signature="e#2396#2397#0" expanded="false" />
-            <element signature="e#2494#2503#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/zjztb/ZjztbBeforeProcessor2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1300">
-          <caret line="68" column="34" lean-forward="false" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
-          <folding>
-<<<<<<< Updated upstream
             <element signature="imports" expanded="true" />
-            <element signature="e#2298#2299#0" expanded="true" />
-            <element signature="e#2325#2326#0" expanded="true" />
->>>>>>> a94df4cbd49628d3398429bacc48548198e86cfc
-=======
-            <element signature="e#2423#2432#0" expanded="false" />
->>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/zjztb/ZjztbAfterProcessor2.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/zmctc/ZmctcProcessor1.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-        <state relative-caret-position="122">
-          <caret line="45" column="64" lean-forward="true" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
+        <state relative-caret-position="314">
+          <caret line="81" column="38" lean-forward="true" selection-start-line="81" selection-start-column="38" selection-end-line="81" selection-end-column="38" />
           <folding />
-=======
-        <state relative-caret-position="-1414">
-          <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-=======
-        <state relative-caret-position="1350">
-          <caret line="71" column="9" lean-forward="false" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
->>>>>>> Stashed changes
-          <folding>
-            <element signature="e#2372#2373#0" expanded="false" />
-            <element signature="e#2399#2400#0" expanded="false" />
-            <element signature="e#2497#2506#0" expanded="false" />
-          </folding>
->>>>>>> a94df4cbd49628d3398429bacc48548198e86cfc
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/syztb/SyztbProcessor1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="82" column="51" lean-forward="true" selection-start-line="82" selection-start-column="51" selection-end-line="82" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/szztb/SzztbProcessor1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="86" column="4" lean-forward="false" selection-start-line="86" selection-start-column="4" selection-end-line="98" selection-end-column="5" />
+        <state relative-caret-position="175">
+          <caret line="88" column="8" lean-forward="false" selection-start-line="88" selection-start-column="8" selection-end-line="97" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/lhztb/LhztbProcessor1.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/Common.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/sxxztb/SxxztbBeforeProcessor1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="31" column="38" lean-forward="false" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+          <caret line="60" column="62" lean-forward="true" selection-start-line="60" selection-start-column="62" selection-end-line="60" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/浙江地区招标网站一览表.txt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/sxxztb/SxxztbBeforeProcessor2.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-        <state relative-caret-position="198">
-          <caret line="58" column="41" lean-forward="false" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
-=======
-        <state relative-caret-position="239">
-          <caret line="42" column="57" lean-forward="true" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
->>>>>>> a94df4cbd49628d3398429bacc48548198e86cfc
-=======
-        <state relative-caret-position="217">
-          <caret line="41" column="55" lean-forward="false" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
->>>>>>> Stashed changes
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/doc/浙江地区招标网站一览表.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="17" column="81" lean-forward="true" selection-start-line="17" selection-start-column="81" selection-end-line="17" selection-end-column="81" />
-          <folding />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/zjztb/ZjztbAfterProcessor2.java">
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/syztb/SyztbProcessor1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="51" column="22" lean-forward="false" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
+        <state relative-caret-position="254">
+          <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3081#3082#0" expanded="true" />
-            <element signature="e#3108#3109#0" expanded="true" />
+            <element signature="e#2305#2306#0" expanded="true" />
+            <element signature="e#2332#2333#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/sxxztb/SxxztbAfterProcessor1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2383#2384#0" expanded="true" />
+            <element signature="e#2410#2411#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/DoMain.java">
->>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="69" column="22" lean-forward="true" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
+        <state relative-caret-position="336">
+          <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
->>>>>>> a94df4cbd49628d3398429bacc48548198e86cfc
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="58" column="21" lean-forward="true" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuliangit/elevator/spider/sxxztb/SxxztbAfterProcessor2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2308#2309#0" expanded="true" />
+            <element signature="e#2335#2336#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/浙江地区招标网站一览表.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="44" column="27" lean-forward="false" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
