@@ -1,5 +1,6 @@
 package com.wuliangit.elevator;
 
+<<<<<<< HEAD
 import com.sun.org.apache.bcel.internal.generic.NEW;
 import com.wuliangit.elevator.dao.BidMapper;
 import com.wuliangit.elevator.spider.chinabidding.ChinabiddingProcessor1;
@@ -18,6 +19,12 @@ import com.wuliangit.elevator.spider.zjztb.ZjztbAfterProcessor1;
 import com.wuliangit.elevator.spider.zjztb.ZjztbAfterProcessor2;
 import com.wuliangit.elevator.spider.zjztb.ZjztbBeforeProcessor1;
 import com.wuliangit.elevator.spider.zjztb.ZjztbBeforeProcessor2;
+=======
+import com.wuliangit.elevator.spider.sxxztb.SxxztbAfterProcessor1;
+import com.wuliangit.elevator.spider.sxxztb.SxxztbAfterProcessor2;
+import com.wuliangit.elevator.spider.sxxztb.SxxztbBeforeProcessor1;
+import com.wuliangit.elevator.spider.sxxztb.SxxztbBeforeProcessor2;
+>>>>>>> 77893b96d3fb4d39cf26403b576dea10b60e8c82
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import us.codecraft.webmagic.Spider;
 
@@ -91,6 +98,7 @@ public class DoMain {
         //诸暨市公共资源交易网采购
 //        Spider.create(new ZjztbBeforeProcessor2()).addRequest(ZjztbBeforeProcessor2.getRequest()).thread(2).run();
         //诸暨市公共资源交易网采购成功
+<<<<<<< HEAD
      //   Spider.create(new ZjztbAfterProcessor2()).addRequest(ZjztbAfterProcessor2.getRequest()).thread(2).run();
       //宁波市海曙区公共资源交易中心(招标)
         //Spider.create(new HaishuGgzyBefore1()).addRequest(HaishuGgzyBefore1.getRequest()).thread(2).run();
@@ -101,6 +109,22 @@ public class DoMain {
         //Spider.create(new ZhztbBefore1()).addRequest(ZhztbBefore1.getRequest()).thread(2).run();
         // 镇海公共资源交易中心(中标)
         //Spider.create(new ZhztbAfter1()).addRequest(ZhztbAfter1.getRequest()).thread(2).run();
+=======
+//        Spider.create(new ZjztbAfterProcessor2()).addRequest(ZjztbAfterProcessor2.getRequest()).thread(2).run();
+
+        //绍兴市上虞区
+//        Spider.create(new SyztbProcessor1()).addRequest(SyztbProcessor1.getRequest()).thread(1).run();
+
+        //绍兴市柯桥区招标
+//        Spider.create(new SxxztbBeforeProcessor1()).addRequest(SxxztbBeforeProcessor1.getRequest()).thread(4).run();
+        //绍兴市柯桥区中标
+//        Spider.create(new SxxztbAfterProcessor1()).addRequest(SxxztbAfterProcessor1.getRequest()).thread(4).run();
+        //绍兴市柯桥区采购
+//        Spider.create(new SxxztbBeforeProcessor2()).addRequest(SxxztbBeforeProcessor2.getRequest()).thread(4).run();
+        //绍兴市柯桥区采购成功
+        Spider.create(new SxxztbAfterProcessor2()).addRequest(SxxztbAfterProcessor2.getRequest()).thread(4).run();
+
+>>>>>>> 77893b96d3fb4d39cf26403b576dea10b60e8c82
     }
 
 }
