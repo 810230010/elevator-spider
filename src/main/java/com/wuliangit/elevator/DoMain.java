@@ -6,6 +6,7 @@ import com.wuliangit.elevator.spider.chinabidding.ChinabiddingProcessor1;
 import com.wuliangit.elevator.spider.chinabidding.ChinabiddingProcessor2;
 import com.wuliangit.elevator.spider.hzctc.HzctcBefore1Processor;
 import com.wuliangit.elevator.spider.hzft.HzftBefore1Processor;
+import com.wuliangit.elevator.spider.nbbidding.NbbiddingAfterProcessor1;
 import com.wuliangit.elevator.spider.nbbidding.NbbiddingBeforeProcessor1;
 import com.wuliangit.elevator.spider.newZmctc.NewZmctcBeforeProcessor1;
 import com.wuliangit.elevator.spider.newZmctc.NewZmctcBeforeProcessor2;
@@ -51,7 +52,7 @@ public class DoMain {
 
 
         //宁波市国际招标有限公司(招标)
-        Spider.create(new NbbiddingBeforeProcessor1()).addRequest(NbbiddingBeforeProcessor1.getRequest()).thread(2).run();
+        //Spider.create(new NbbiddingBeforeProcessor1()).addRequest(NbbiddingBeforeProcessor1.getRequest()).thread(2).run();
         //宁波市国际招标有限公司(中标)
         //Spider.create(new NbbiddingAfterProcessor1()).addRequest(NbbiddingAfterProcessor1.getRequest()).thread(2).run();
 

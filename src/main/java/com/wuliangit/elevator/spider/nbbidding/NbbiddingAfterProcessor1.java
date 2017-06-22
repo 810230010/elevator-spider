@@ -28,7 +28,7 @@ public class NbbiddingAfterProcessor1 implements PageProcessor{
                 BidService bidService = SpringUtils.getBean(BidService.class);
                 String sid = html.xpath("//*[@id=\"AutoNumber1\"]/tbody/tr[2]/td[6]/text()").toString();
                 String public_time = html.xpath("//*[@id=\"AutoNumber1\"]/tbody/tr[4]/td[6]/text()").toString();
-                String content = html.xpath("//*[@id=\"zoom\"]").toString();
+                String content = html.xpath("//*[@id=\"zoom\"]").toString().replaceAll("(\0|\\s*|\r|\n)","");
                 Bid bid = new Bid();
                 bid.setSid(sid);
                 bid.setPublicTime(public_time);
