@@ -33,7 +33,7 @@ public class NbbiddingBeforeProcessor1 implements PageProcessor{
                     String content = html.xpath("//*[@id=\"zoom\"]").toString();
                     Bid bid = new Bid();
                     bid.setSid(sid);
-                    bid.setPublicTime(public_time);
+//                    bid.setPublicTime(public_time);
                     bid.setTitle(title);
                     bid.setContent(content);
                     bid.setType("ZHAOBIAO");

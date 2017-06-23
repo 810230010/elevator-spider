@@ -58,7 +58,7 @@ public class SyztbProcessor1 implements PageProcessor {
                 return;
             }
             bid.setUrl(page.getUrl().toString());
-            bid.setPublicTime(html.xpath("/html/body/div[2]/div/div[2]/div/table/tbody/tr[2]/td/text()").toString().substring(13,22));
+//            bid.setPublicTime(html.xpath("/html/body/div[2]/div/div[2]/div/table/tbody/tr[2]/td/text()").toString().substring(13,22));
             bid.setContent(html.xpath("/html/body/div[2]/div/div[2]/div/table/tbody/tr[3]/td").toString().replaceAll("(\0|\\s*|\r|\n|\t)",""));
             bid.setTitle(title);
             bidService.insertBid(bid);

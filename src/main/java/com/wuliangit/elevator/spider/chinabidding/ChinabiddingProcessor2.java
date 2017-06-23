@@ -43,7 +43,7 @@ public class ChinabiddingProcessor2 implements PageProcessor {
 
             Bid bid = new Bid();
             bid.setUrl(page.getUrl().toString());
-            bid.setPublicTime(html.xpath("/html/body/div[2]/active/em/text()").toString().substring(0, 10));
+//            bid.setPublicTime(html.xpath("/html/body/div[2]/active/em/text()").toString().substring(0, 10));
             bid.setContent(html.xpath("/html/body/div[2]").toString().replaceAll("(\0|\\s*|\r|\n)",""));
             bid.setType("ZHONGBIAO");
             bid.setTitle(title);

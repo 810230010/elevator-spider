@@ -58,7 +58,7 @@ public class HzftBefore1Processor implements PageProcessor{
 
             Bid bid = new Bid();
             bid.setUrl(page.getUrl().toString());
-            bid.setPublicTime(html.xpath("/html/body/div[2]/div/div[2]/div/div[1]/span[2]/em/text()").toString().substring(0, 10));
+//            bid.setPublicTime(html.xpath("/html/body/div[2]/div/div[2]/div/div[1]/span[2]/em/text()").toString().substring(0, 10));
             bid.setContent(html.xpath("/html/body/div[2]/div/div[2]/div/div[2]").toString().replaceAll("(\0|\\s*|\r|\n|\t)",""));
             bid.setType(BID_STATE_ZHAOBIAO);
             bid.setTitle(title);

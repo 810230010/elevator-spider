@@ -33,7 +33,7 @@ public class ZhztbBefore1 implements PageProcessor {
                         .toString().substring(6);
                 String content = html.xpath("/html/body/div[3]/div/div[2]/div").toString();
                 Bid bid = new Bid();
-                bid.setPublicTime(public_time);
+//                bid.setPublicTime(public_time);
                 bid.setTitle(title);
                 bid.setContent(content);
                 bid.setType("ZHAOBIAO");

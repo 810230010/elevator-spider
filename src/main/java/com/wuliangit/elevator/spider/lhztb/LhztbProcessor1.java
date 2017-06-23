@@ -58,7 +58,7 @@ public class LhztbProcessor1 implements PageProcessor {
                 return;
             }
             bid.setUrl(page.getUrl().toString());
-            bid.setPublicTime(html.xpath("//*[@id=\"Table2\"]/tbody/tr/td[2]/table/tbody[1]/tr[2]/td/text()").toString().substring(5,13));
+//            bid.setPublicTime(html.xpath("//*[@id=\"Table2\"]/tbody/tr/td[2]/table/tbody[1]/tr[2]/td/text()").toString().substring(5,13));
             bid.setContent(html.xpath("//*[@id=\"Zoom\"]/p[2]").toString().replaceAll("(\0|\\s*|\r|\n|\t)",""));
             bid.setTitle(title);
             bidService.insertBid(bid);

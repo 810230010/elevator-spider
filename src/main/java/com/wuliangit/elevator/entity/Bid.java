@@ -1,5 +1,7 @@
 package com.wuliangit.elevator.entity;
 
+import java.util.Date;
+
 public class Bid {
     private Integer bidId;
 
@@ -9,7 +11,7 @@ public class Bid {
 
     private String title;
 
-    private String publicTime;
+    private Date publicTime;
 
     private String beginTime;
 
@@ -51,12 +53,12 @@ public class Bid {
         this.title = title == null ? null : title.trim();
     }
 
-    public String getPublicTime() {
+    public Date getPublicTime() {
         return publicTime;
     }
 
-    public void setPublicTime(String publicTime) {
-        this.publicTime = publicTime == null ? null : publicTime.trim();
+    public void setPublicTime(Date publicTime) {
+        this.publicTime = publicTime;
     }
 
     public String getBeginTime() {

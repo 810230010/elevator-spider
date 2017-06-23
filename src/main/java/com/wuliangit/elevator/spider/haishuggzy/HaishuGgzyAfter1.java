@@ -41,7 +41,7 @@ public class HaishuGgzyAfter1 implements PageProcessor{
                     String content = html.xpath("//*[@id=\"Zoom\"]").toString();
                     System.out.println(title);
                     Bid bid = new Bid();
-                    bid.setPublicTime(public_time);
+//                    bid.setPublicTime(public_time);
                     bid.setTitle(title);
                     bid.setContent(content);
                     bid.setType("ZHONGBIAO");

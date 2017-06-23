@@ -49,7 +49,7 @@ public class SzztbProcessor1 implements PageProcessor {
                 if(!bidService.isExistByTitle(title.trim())){
                     bid.setType(BID_STATE_ZHONGBIAO);
                     bid.setUrl(page.getUrl().toString());
-                    bid.setPublicTime(html.xpath("//*[@id=\"main\"]/table[2]/tbody/tr/td/table[1]/tbody/tr[2]/td/table/tbody/tr/td[1]/text()").toString().substring(5,14));
+//                    bid.setPublicTime(html.xpath("//*[@id=\"main\"]/table[2]/tbody/tr/td/table[1]/tbody/tr[2]/td/table/tbody/tr/td[1]/text()").toString().substring(5,14));
                     bid.setContent(html.xpath("//*[@id=\"zoom\"]").toString().replaceAll("(\0|\\s*|\r|\n|\t)",""));
                     bid.setTitle(title);
                     bidService.insertBid(bid);
@@ -60,7 +60,7 @@ public class SzztbProcessor1 implements PageProcessor {
                 if(!bidService.isExistByTitle(title.trim())){
                     bid.setType(BID_STATE_ZHAOBIAO);
                     bid.setUrl(page.getUrl().toString());
-                    bid.setPublicTime(html.xpath("//*[@id=\"main\"]/table[2]/tbody/tr/td/table[1]/tbody/tr[2]/td/table/tbody/tr/td[1]/text()").toString().substring(5,14));
+//                    bid.setPublicTime(html.xpath("//*[@id=\"main\"]/table[2]/tbody/tr/td/table[1]/tbody/tr[2]/td/table/tbody/tr/td[1]/text()").toString().substring(5,14));
                     bid.setContent(html.xpath("//*[@id=\"zoom\"]").toString().replaceAll("(\0|\\s*|\r|\n|\t)",""));
                     bid.setTitle(title);
                     bidService.insertBid(bid);

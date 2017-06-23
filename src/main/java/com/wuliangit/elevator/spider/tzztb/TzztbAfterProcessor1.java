@@ -49,7 +49,7 @@ public class TzztbAfterProcessor1 implements PageProcessor {
                 return;
             }
             bid.setUrl(page.getUrl().toString());
-            bid.setPublicTime(html.xpath("/html/body/div[2]/div[3]/div/div[1]/div/div[2]/em/text()").toString().substring(5,16));
+//            bid.setPublicTime(html.xpath("/html/body/div[2]/div[3]/div/div[1]/div/div[2]/em/text()").toString().substring(5,16));
             bid.setContent(html.xpath("/html/body/div[2]/div[3]/div/div[1]/div/div[2]/div").toString().replaceAll("(\0|\\s*|\r|\n|\t)",""));
             bid.setTitle(title);
             bidService.insertBid(bid);

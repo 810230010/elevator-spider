@@ -57,7 +57,7 @@ public class SxxztbBeforeProcessor1 implements PageProcessor {
                 return;
             }
             bid.setUrl(page.getUrl().toString());
-            bid.setPublicTime(html.xpath("//*[@id=\"lblPublishDate\"]/text()").toString().substring(5,14));
+//            bid.setPublicTime(html.xpath("//*[@id=\"lblPublishDate\"]/text()").toString().substring(5,14));
             bid.setContent(html.xpath("//*[@id=\"Zoom\"]/table/tbody/tr/td").toString());
             bid.setTitle(title);
 

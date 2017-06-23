@@ -40,7 +40,7 @@ public class HzctcAfter1Processor implements PageProcessor {
 
                 Bid bid = new Bid();
                 bid.setUrl(page.getUrl().toString());
-                bid.setPublicTime(html.xpath("//*[@id=\"ctl00_ContentPlaceHolder1_DB_PublishStartTime\"]/text()").toString());
+//                bid.setPublicTime(html.xpath("//*[@id=\"ctl00_ContentPlaceHolder1_DB_PublishStartTime\"]/text()").toString());
                 bid.setContent(html.xpath("//*[@id=\"PageMain\"]/div[2]").toString().replaceAll("(\0|\\s*|\r|\n)",""));
                 bid.setType(BID_STATE_ZHONGBIAO);
                 bid.setTitle(title);

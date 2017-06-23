@@ -17,8 +17,6 @@ public interface BidMapper {
 
     int updateByPrimaryKey(Bid record);
 
-
-
     String isExistByTitle(String title);
 
     String isExistBySid(String sid);

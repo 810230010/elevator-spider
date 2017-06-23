@@ -42,7 +42,7 @@ public class ZjztbBeforeProcessor1 implements PageProcessor {
                 return;
             }
             bid.setUrl(page.getUrl().toString());
-            bid.setPublicTime(html.xpath("/html/body/div[4]/div/div[2]/div[2]/text()").toString().substring(7,15));
+//            bid.setPublicTime(html.xpath("/html/body/div[4]/div/div[2]/div[2]/text()").toString().substring(7,15));
             bid.setContent(html.xpath("/html/body/div[4]/div/div[2]/div[3]").toString().replaceAll("(\0|\\s*|\r|\n|\t)",""));
             bid.setTitle(title);
             bidService.insertBid(bid);

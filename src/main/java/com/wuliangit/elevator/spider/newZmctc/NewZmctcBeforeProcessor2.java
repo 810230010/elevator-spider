@@ -33,7 +33,7 @@ public class NewZmctcBeforeProcessor2 implements PageProcessor{
 
              Bid bid = new Bid();
              bid.setUrl(page.getUrl().toString());
-             bid.setPublicTime(html.xpath("//*[@id=\"tdTitle\"]/font[2]/text()").toString().substring(7,16));
+//             bid.setPublicTime(html.xpath("//*[@id=\"tdTitle\"]/font[2]/text()").toString().substring(7,16));
              bid.setContent(html.xpath("//*[@id=\"TDContent\"]/div[2]").toString().replaceAll("(\0|\\s*|\r|\n)",""));
              bid.setType("ZHAOBIAO");
              bid.setTitle(title);
