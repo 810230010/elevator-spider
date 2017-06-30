@@ -1,6 +1,8 @@
 package com.wuliangit.elevator;
 
 
+import com.wuliangit.elevator.spider.dhggzy.DhggzyAfter1;
+import com.wuliangit.elevator.spider.dhggzy.DhggzyBefore1;
 import com.wuliangit.elevator.spider.dsztb.DsztbAfter1;
 import com.wuliangit.elevator.spider.dsztb.DsztbBefore1;
 import com.wuliangit.elevator.spider.zsztb.ZsztbAfter1;
@@ -135,7 +137,12 @@ public class DoMain {
         //岱山县(招标)
         //Spider.create(new DsztbBefore1()).addRequest(DsztbBefore1.getRequest()).thread(2).run();
         //岱山县(中标)
-        Spider.create(new DsztbAfter1()).addRequest(DsztbAfter1.getRequest()).thread(2).run();
+        //Spider.create(new DsztbAfter1()).addRequest(DsztbAfter1.getRequest()).thread(2).run();
+
+        //舟山市定海区公共资源交易中心(招标)
+        //Spider.create(new DhggzyBefore1()).addRequest(DhggzyBefore1.getRequest()).thread(2).run();
+        //舟山市定海区公共资源交易中心(中标)
+        Spider.create(new DhggzyAfter1()).addRequest(DhggzyAfter1.getRequest()).thread(2).run();
     }
 
 }
