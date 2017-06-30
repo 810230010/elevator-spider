@@ -14,6 +14,9 @@ import us.codecraft.webmagic.selector.Selectable;
 import us.codecraft.webmagic.utils.HttpConstant;
 
 import java.io.UnsupportedEncodingException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -36,7 +39,14 @@ public class NbyzAfter1 implements PageProcessor {
                 String public_time = all.substring(6, all.length() - 1);
                 String content = html.xpath("/html/body/table[2]/tbody/tr[2]/td/table/tbody/tr[4]/td/div").toString();
                 Bid bid = new Bid();
-                bid.setPublicTime(public_time);
+                SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd ");
+                Date date = null;
+                try {
+                    date = sf.parse(public_time);
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                }
+                bid.setPublicTime(date);
                 bid.setTitle(title);
                 bid.setContent(content);
                 bid.setType(Common.BID_STATE_ZHONGBIAO);

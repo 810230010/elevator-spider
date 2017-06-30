@@ -35,7 +35,7 @@ public class Common {
         Iterator keywordIterator = zhaoBiaoKeywodList.iterator();
         while(keywordIterator.hasNext()){
             String keyword = (String)keywordIterator.next();
-            if(queryParam.contains(keyword)){
+            if(queryParam.contains(keyword) && queryParam.contains("电梯")){
                 return true;
             }
         }
@@ -53,7 +53,7 @@ public class Common {
         Iterator keywordIterator = zhongBiaoKeywodList.iterator();
         while(keywordIterator.hasNext()){
             String keyword = (String)keywordIterator.next();
-            if(queryParam.contains(keyword)){
+            if(queryParam.contains(keyword) && queryParam.contains("电梯")){
                 return true;
             }
         }

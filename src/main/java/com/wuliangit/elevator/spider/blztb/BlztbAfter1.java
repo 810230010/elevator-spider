@@ -12,7 +12,10 @@ import us.codecraft.webmagic.selector.Html;
 import us.codecraft.webmagic.selector.Selectable;
 import us.codecraft.webmagic.utils.HttpConstant;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -33,7 +36,14 @@ public class BlztbAfter1 implements PageProcessor {
                 String public_time = all.substring(all.indexOf("时") + 3, all.indexOf("作") - 9);
                 String content = html.xpath("/html/body/table[2]/tbody/tr/td[2]/table[3]/tbody/tr[3]/td/table/tbody/tr[1]/td").toString();
                 Bid bid = new Bid();
-                bid.setPublicTime(public_time);
+                SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd ");
+                Date date = null;
+                try {
+                    date = sf.parse(public_time);
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                }
+                bid.setPublicTime(date);
                 bid.setTitle(title);
                 bid.setContent(content);
                 bid.setType(Common.BID_STATE_ZHONGBIAO);

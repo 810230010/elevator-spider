@@ -1,36 +1,9 @@
 package com.wuliangit.elevator;
 
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
-import com.wuliangit.elevator.dao.BidMapper;
-import com.wuliangit.elevator.spider.blztb.BlztbAfter1;
-import com.wuliangit.elevator.spider.blztb.BlztbBefore1;
-import com.wuliangit.elevator.spider.chinabidding.ChinabiddingProcessor1;
-import com.wuliangit.elevator.spider.chinabidding.ChinabiddingProcessor2;
-import com.wuliangit.elevator.spider.cixi.CixiAfter1;
-import com.wuliangit.elevator.spider.cixi.CixiBefore1;
-import com.wuliangit.elevator.spider.haishuggzy.HaishuGgzyAfter1;
-import com.wuliangit.elevator.spider.haishuggzy.HaishuGgzyBefore1;
-import com.wuliangit.elevator.spider.hzctc.HzctcBefore1Processor;
-import com.wuliangit.elevator.spider.hzft.HzftBefore1Processor;
-import com.wuliangit.elevator.spider.nbbidding.NbbiddingAfterProcessor1;
-import com.wuliangit.elevator.spider.nbbidding.NbbiddingBeforeProcessor1;
-import com.wuliangit.elevator.spider.nbyz.NbyzAfter1;
-import com.wuliangit.elevator.spider.nbyz.NbyzBefore1;
-import com.wuliangit.elevator.spider.newZmctc.NewZmctcBeforeProcessor1;
-import com.wuliangit.elevator.spider.newZmctc.NewZmctcBeforeProcessor2;
-import com.wuliangit.elevator.spider.yyztb.YyztbAfter1;
-import com.wuliangit.elevator.spider.yyztb.YyztbBefore1;
-import com.wuliangit.elevator.spider.zhztb.ZhztbAfter1;
-import com.wuliangit.elevator.spider.zhztb.ZhztbBefore1;
-import com.wuliangit.elevator.spider.zjztb.ZjztbAfterProcessor1;
-import com.wuliangit.elevator.spider.zjztb.ZjztbAfterProcessor2;
-import com.wuliangit.elevator.spider.zjztb.ZjztbBeforeProcessor1;
-import com.wuliangit.elevator.spider.zjztb.ZjztbBeforeProcessor2;
-import com.wuliangit.elevator.spider.sxxztb.SxxztbAfterProcessor1;
-import com.wuliangit.elevator.spider.sxxztb.SxxztbAfterProcessor2;
-import com.wuliangit.elevator.spider.sxxztb.SxxztbBeforeProcessor1;
-import com.wuliangit.elevator.spider.sxxztb.SxxztbBeforeProcessor2;
+import com.wuliangit.elevator.spider.dsztb.DsztbAfter1;
+import com.wuliangit.elevator.spider.dsztb.DsztbBefore1;
+import com.wuliangit.elevator.spider.zsztb.ZsztbAfter1;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import us.codecraft.webmagic.Spider;
 
@@ -147,7 +120,22 @@ public class DoMain {
         //余姚市招标投标王(招标)
         //Spider.create(new YyztbBefore1()).addRequest(YyztbBefore1.getRequest()).thread(2).run();
         //余姚市投标招标(中标)
-        Spider.create(new YyztbAfter1()).addRequest(YyztbAfter1.getRequest()).thread(2).run();
+        //Spider.create(new YyztbAfter1()).addRequest(YyztbAfter1.getRequest()).thread(2).run();
+
+         //宁波大榭开发区(招标)
+        //Spider.create(new DaxieBefore1()).addRequest(DaxieBefore1.getRequest()).thread(1).run();
+        // 宁波大榭开发区(中标)
+        //Spider.create(new DaxieAfter1()).addRequest(DaxieAfter1.getRequest()).thread(1).run();
+
+        //舟山电子招投标平台(招标)
+        //Spider.create(new ZsztbBefore1()).addRequest(ZsztbBefore1.getRequest()).thread(2).run();
+        //舟山电子招投标平台(中标)
+        //Spider.create(new ZsztbAfter1()).addRequest(ZsztbbAfter1.getRequest()).thread(2).run();
+
+        //岱山县(招标)
+        //Spider.create(new DsztbBefore1()).addRequest(DsztbBefore1.getRequest()).thread(2).run();
+        //岱山县(中标)
+        Spider.create(new DsztbAfter1()).addRequest(DsztbAfter1.getRequest()).thread(2).run();
     }
 
 }

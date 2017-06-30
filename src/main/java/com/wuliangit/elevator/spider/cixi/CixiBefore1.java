@@ -14,10 +14,9 @@ import us.codecraft.webmagic.selector.Selectable;
 import us.codecraft.webmagic.utils.HttpConstant;
 
 import java.io.UnsupportedEncodingException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 /**
  * Created by Administrator on 2017/6/23.
@@ -38,7 +37,14 @@ public class CixiBefore1 implements PageProcessor {
                 String public_time = all.substring(6, 16).replace("年", "/").replace("月", "/");
                 String content = html.xpath("//*[@id=\"zoom\"]/table[2]/tbody").toString();
                 Bid bid = new Bid();
-                bid.setPublicTime(public_time);
+                SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd ");
+                Date date = null;
+                try {
+                    date = sf.parse(public_time);
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                }
+                bid.setPublicTime(date);
                 bid.setTitle(title);
                 bid.setContent(content);
                 bid.setType(Common.BID_STATE_ZHAOBIAO);
